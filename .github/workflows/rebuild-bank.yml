@@ -1,0 +1,52 @@
+name: Rebuild bank.json
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'questions/**/*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate each question JSON
+        run: |
+          set -e
+          fail=0
+          for f in questions/*.json; do
+            if [ ! -f "$f" ]; then continue; fi
+            if ! jq -e 'if type == "object" then
+                (.name and .question_type and .question_text and .difficulty)
+              else false end' "$f" > /dev/null; then
+              echo "::error file=$f::Missing required fields (name, question_type, question_text, difficulty) or not a single JSON object"
+              fail=1
+            fi
+          done
+          if [ "$fail" -eq 1 ]; then exit 1; fi
+
+      - name: Concatenate questions → bank.json
+        run: |
+          if ls questions/*.json 1> /dev/null 2>&1; then
+            jq -s 'sort_by(.submitted_at // "")' questions/*.json > bank.json
+          else
+            echo '[]' > bank.json
+          fi
+
+      - name: Commit rebuilt bank.json if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add bank.json
+          if git diff --staged --quiet; then
+            echo "No changes to bank.json"
+          else
+            git commit -m "Rebuild bank.json [skip ci]"
+            git push
+          fi
