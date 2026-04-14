@@ -46,5 +46,53 @@
     "submitter": "@danielcregg",
     "submitted_at": "2026-04-14T00:00:00.000Z",
     "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-mnygsbt5",
+    "name": "Transient Keyword in Serialization",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the effect of marking a field as <code>transient</code> in a serializable class?</p>",
+    "general_feedback": "The <code>transient</code> keyword prevents a field from being serialized, so its value is not saved or restored during serialization and deserialization.",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "Serialization",
+    "tags": [
+      "Serialization",
+      "Java",
+      "transient"
+    ],
+    "default_grade": 1,
+    "penalty": 0.3333333,
+    "validation_score": 10,
+    "submitter": "@anonymous",
+    "submitted_at": "2026-04-14T17:15:09.887Z",
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct.",
+    "partially_correct_feedback": "Partially correct.",
+    "incorrect_feedback": "Incorrect.",
+    "answers": [
+      {
+        "text": "The field is serialized more quickly.",
+        "fraction": 0,
+        "feedback": "Incorrect. The <code>transient</code> keyword does not affect performance; it excludes the field from serialization."
+      },
+      {
+        "text": "The field is excluded from serialization.",
+        "fraction": 100,
+        "feedback": "Correct. Marking a field as <code>transient</code> means it will not be included during the serialization process."
+      },
+      {
+        "text": "The field becomes thread-safe during serialization.",
+        "fraction": 0,
+        "feedback": "Incorrect. Thread safety is unrelated to the <code>transient</code> keyword; it does not provide synchronization."
+      },
+      {
+        "text": "The field is serialized only if it's static.",
+        "fraction": 0,
+        "feedback": "Incorrect. Static fields are handled separately from <code>transient</code>, which applies only to instance fields."
+      }
+    ]
   }
 ]
