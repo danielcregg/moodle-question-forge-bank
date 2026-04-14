@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "idnumber": "mqf-a3f9c02b",
+    "name": "Binary search time complexity",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the worst-case time complexity of binary search on a sorted array of <em>n</em> elements?</p>",
+    "general_feedback": "<p>Binary search halves the search space on every step, so after <em>k</em> steps you have <em>n</em>/2<sup>k</sup> elements remaining. The algorithm stops when that reaches 1, i.e. when <em>k</em> = log<sub>2</sub> <em>n</em>, giving O(log n).</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "algorithms",
+    "tags": [
+      "complexity",
+      "search",
+      "algorithms"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — each step halves the range, giving log₂n steps.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — think about how many elements remain after each comparison.",
+    "answers": [
+      {
+        "text": "O(log n)",
+        "fraction": 100,
+        "feedback": "Right — the search range halves every step."
+      },
+      {
+        "text": "O(n)",
+        "fraction": 0,
+        "feedback": "That would be linear search. Binary search exploits the sorted order to do much better."
+      },
+      {
+        "text": "O(n log n)",
+        "fraction": 0,
+        "feedback": "That's the cost of a typical comparison sort, not a single search."
+      },
+      {
+        "text": "O(1)",
+        "fraction": 0,
+        "feedback": "Constant time would mean one comparison regardless of n — only true if the target happens to be the middle element."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-14T00:00:00.000Z",
+    "validation_score": 10
+  }
+]
