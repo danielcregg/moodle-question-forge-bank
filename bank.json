@@ -94,5 +94,485 @@
         "feedback": "Incorrect. Static fields are handled separately from <code>transient</code>, which applies only to instance fields."
       }
     ]
+  },
+  {
+    "idnumber": "mqf-c01atmst",
+    "name": "Location of positive charge in an atom",
+    "question_type": "multichoice",
+    "question_text": "<p>Which subatomic particle carries the positive charge of an atom, and where is it located?</p>",
+    "general_feedback": "<p>Protons carry a +1 elementary charge and are bound inside the nucleus along with neutrons. Electrons are negatively charged and orbit the nucleus; neutrons are electrically neutral.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "chemistry",
+    "tags": [
+      "atomic-structure",
+      "particles",
+      "nucleus"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — protons sit in the nucleus and carry the atom's positive charge.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — recall which particle is positive and where it is found.",
+    "answers": [
+      {
+        "text": "Protons, located in the nucleus",
+        "fraction": 100,
+        "feedback": "Right — protons are positive and bound in the nucleus."
+      },
+      {
+        "text": "Electrons, located in the nucleus",
+        "fraction": 0,
+        "feedback": "Electrons are negatively charged, and they orbit the nucleus rather than sit inside it."
+      },
+      {
+        "text": "Neutrons, orbiting the nucleus",
+        "fraction": 0,
+        "feedback": "Neutrons have no net charge and reside in the nucleus, not in orbit."
+      },
+      {
+        "text": "Electrons, orbiting the nucleus",
+        "fraction": 0,
+        "feedback": "Electrons do orbit the nucleus, but they carry negative charge, not positive."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-m01drvsn",
+    "name": "Derivative of sin(x)",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the derivative of f(x) = sin(x) with respect to x?</p>",
+    "general_feedback": "<p>The derivative of sine is cosine: d/dx [sin(x)] = cos(x). This follows from the small-angle approximation sin(h) ≈ h and the angle-addition identity applied in the limit definition of the derivative.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "math",
+    "tags": [
+      "calculus",
+      "derivatives",
+      "trigonometry"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — d/dx [sin(x)] = cos(x).",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — recall the standard derivatives of the trigonometric functions.",
+    "answers": [
+      {
+        "text": "cos(x)",
+        "fraction": 100,
+        "feedback": "Right — sine differentiates to cosine."
+      },
+      {
+        "text": "−cos(x)",
+        "fraction": 0,
+        "feedback": "That is the derivative of cos(x), not sin(x)."
+      },
+      {
+        "text": "−sin(x)",
+        "fraction": 0,
+        "feedback": "That is the second derivative of sin(x), not the first."
+      },
+      {
+        "text": "tan(x)",
+        "fraction": 0,
+        "feedback": "tan(x) is sin(x) / cos(x); it is not the derivative of sin(x)."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-b02dnabp",
+    "name": "DNA complementary base for adenine",
+    "question_type": "multichoice",
+    "question_text": "<p>In double-stranded DNA, which base pairs with adenine on the opposite strand?</p>",
+    "general_feedback": "<p>Watson–Crick base pairing: adenine (A) pairs with thymine (T) via two hydrogen bonds; guanine (G) pairs with cytosine (C) via three hydrogen bonds. In RNA, uracil replaces thymine.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "biology",
+    "tags": [
+      "genetics",
+      "dna",
+      "base-pairing"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — A pairs with T in DNA.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — remember the Watson–Crick pairing rules for DNA.",
+    "answers": [
+      {
+        "text": "Thymine",
+        "fraction": 100,
+        "feedback": "Right — A–T pair via two hydrogen bonds in DNA."
+      },
+      {
+        "text": "Uracil",
+        "fraction": 0,
+        "feedback": "Uracil replaces thymine in RNA, not in DNA."
+      },
+      {
+        "text": "Guanine",
+        "fraction": 0,
+        "feedback": "Guanine pairs with cytosine, not with adenine."
+      },
+      {
+        "text": "Cytosine",
+        "fraction": 0,
+        "feedback": "Cytosine pairs with guanine in the other Watson–Crick pair."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-j01strim",
+    "name": "Java String immutability",
+    "question_type": "multichoice",
+    "question_text": "<p>In Java, consider the following snippet:</p><pre>String s = \"hi\";\ns.concat(\" there\");\nSystem.out.println(s);</pre><p>What is printed to the console?</p>",
+    "general_feedback": "<p><code>String</code> objects are immutable in Java — every method that appears to modify a string actually returns a new string. <code>s.concat(\" there\")</code> produces a new <code>String</code> with value <code>\"hi there\"</code>, but the reference <code>s</code> is never reassigned, so it still points at the original <code>\"hi\"</code>.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "strings",
+      "immutability"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — strings are immutable, so the concat result is discarded.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — think about what concat returns, and whether s itself is reassigned.",
+    "answers": [
+      {
+        "text": "hi",
+        "fraction": 100,
+        "feedback": "Right — concat returns a new String, and s was never reassigned to it."
+      },
+      {
+        "text": "hi there",
+        "fraction": 0,
+        "feedback": "That would require reassigning s, e.g. s = s.concat(\" there\"). The snippet discards the returned String."
+      },
+      {
+        "text": "A compile-time error occurs",
+        "fraction": 0,
+        "feedback": "The snippet is valid Java. String has a concat method that returns String."
+      },
+      {
+        "text": "A NullPointerException",
+        "fraction": 0,
+        "feedback": "s is initialised to a non-null literal, so no NullPointerException is thrown."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-p01nstwl",
+    "name": "Newton's second law — net force",
+    "question_type": "multichoice",
+    "question_text": "<p>A 2 kg block on a frictionless surface is pushed with a constant net force. It accelerates at 3 m/s². What is the magnitude of the net force acting on it?</p>",
+    "general_feedback": "<p>Newton's second law states <em>F = m · a</em>. With <em>m</em> = 2 kg and <em>a</em> = 3 m/s², the net force is 2 × 3 = 6 N.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "physics",
+    "tags": [
+      "mechanics",
+      "newton",
+      "forces"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — F = ma.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — recall F = m × a for a single constant net force.",
+    "answers": [
+      {
+        "text": "6 N",
+        "fraction": 100,
+        "feedback": "Right — F = m · a = 2 × 3 = 6 N."
+      },
+      {
+        "text": "1.5 N",
+        "fraction": 0,
+        "feedback": "You divided instead of multiplying. F = m · a, not a / m."
+      },
+      {
+        "text": "5 N",
+        "fraction": 0,
+        "feedback": "You added the values. Newton's second law multiplies mass by acceleration."
+      },
+      {
+        "text": "0.67 N",
+        "fraction": 0,
+        "feedback": "That is m / a. The correct formula is F = m · a."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-c02phscl",
+    "name": "pH of a neutral solution",
+    "question_type": "multichoice",
+    "question_text": "<p>At 25 °C, what is the pH of a neutral aqueous solution?</p>",
+    "general_feedback": "<p>In pure water at 25 °C, [H⁺] = [OH⁻] = 10⁻⁷ M, which gives pH = −log₁₀(10⁻⁷) = 7. Values below 7 are acidic; above 7 are basic.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "chemistry",
+    "tags": [
+      "acids-bases",
+      "ph",
+      "equilibrium"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — neutral water at 25 °C has pH 7.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — recall what [H⁺] equals when a solution is neutral.",
+    "answers": [
+      {
+        "text": "pH 7",
+        "fraction": 100,
+        "feedback": "Right — [H⁺] = [OH⁻] = 10⁻⁷ M, so pH is exactly 7 at 25 °C."
+      },
+      {
+        "text": "pH 0",
+        "fraction": 0,
+        "feedback": "pH 0 corresponds to [H⁺] = 1 M, a strongly acidic solution."
+      },
+      {
+        "text": "pH 10",
+        "fraction": 0,
+        "feedback": "pH 10 is basic — [OH⁻] exceeds [H⁺] by a factor of 1000."
+      },
+      {
+        "text": "pH 14",
+        "fraction": 0,
+        "feedback": "pH 14 is strongly basic, approximately 1 M OH⁻."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-b01mtchn",
+    "name": "Organelle that produces most ATP",
+    "question_type": "multichoice",
+    "question_text": "<p>Which eukaryotic organelle is responsible for producing most of the cell's ATP through aerobic respiration?</p>",
+    "general_feedback": "<p>The mitochondrion is where pyruvate oxidation, the citric acid cycle, and oxidative phosphorylation take place, yielding the majority of ATP in aerobic eukaryotic cells.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "biology",
+    "tags": [
+      "cell-biology",
+      "organelles",
+      "respiration"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — the mitochondrion drives aerobic ATP production.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — think about where the citric acid cycle and oxidative phosphorylation take place.",
+    "answers": [
+      {
+        "text": "Mitochondrion",
+        "fraction": 100,
+        "feedback": "Right — it hosts the citric acid cycle and the electron transport chain."
+      },
+      {
+        "text": "Chloroplast",
+        "fraction": 0,
+        "feedback": "Chloroplasts generate ATP during photosynthesis, and they are present only in plant and algal cells."
+      },
+      {
+        "text": "Ribosome",
+        "fraction": 0,
+        "feedback": "Ribosomes synthesise proteins; they consume ATP rather than produce it."
+      },
+      {
+        "text": "Golgi apparatus",
+        "fraction": 0,
+        "feedback": "The Golgi sorts and modifies proteins for secretion; it does not carry out respiration."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-m02pythg",
+    "name": "Pythagorean hypotenuse 3-4-?",
+    "question_type": "multichoice",
+    "question_text": "<p>A right-angled triangle has legs of length 3 and 4. What is the length of its hypotenuse?</p>",
+    "general_feedback": "<p>By the Pythagorean theorem, c² = a² + b² = 3² + 4² = 9 + 16 = 25, so c = √25 = 5. This is the classic 3-4-5 right triangle.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "math",
+    "tags": [
+      "geometry",
+      "pythagoras",
+      "triangles"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — √(9 + 16) = 5.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — apply c² = a² + b² and then take the square root.",
+    "answers": [
+      {
+        "text": "5",
+        "fraction": 100,
+        "feedback": "Right — √(3² + 4²) = √25 = 5."
+      },
+      {
+        "text": "7",
+        "fraction": 0,
+        "feedback": "You added the legs directly. The theorem sums their squares, not the legs themselves."
+      },
+      {
+        "text": "√7",
+        "fraction": 0,
+        "feedback": "That would come from a² + b² = 7, but 3² + 4² = 25."
+      },
+      {
+        "text": "12.5",
+        "fraction": 0,
+        "feedback": "You reported the sum of squares instead of its square root."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-p01lstcp",
+    "name": "Python list comprehension output",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the value of <code>result</code> after running the following Python code?</p><pre>result = [x * x for x in range(5) if x % 2 == 0]</pre>",
+    "general_feedback": "<p>The comprehension iterates over <code>range(5)</code>, which yields 0, 1, 2, 3, 4. The filter <code>if x % 2 == 0</code> keeps only 0, 2, and 4. Each kept value is squared, giving <code>[0, 4, 16]</code>.</p>",
+    "difficulty": "medium",
+    "bloom_level": "apply",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "list-comprehension",
+      "iteration"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — only even values from range(5) are kept and then squared.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — step through range(5), apply the even filter, then square each remaining value.",
+    "answers": [
+      {
+        "text": "[0, 4, 16]",
+        "fraction": 100,
+        "feedback": "Right — 0², 2², and 4² are the squares of the even values 0, 2, 4."
+      },
+      {
+        "text": "[0, 1, 4, 9, 16]",
+        "fraction": 0,
+        "feedback": "That ignores the filter — it is the result without the if clause."
+      },
+      {
+        "text": "[4, 16]",
+        "fraction": 0,
+        "feedback": "You excluded 0, but 0 is even (0 % 2 == 0), so it stays in."
+      },
+      {
+        "text": "[0, 2, 4]",
+        "fraction": 0,
+        "feedback": "Those are the filtered values before squaring. The comprehension squares each kept value."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-p02wvfrq",
+    "name": "Wave speed from frequency and wavelength",
+    "question_type": "multichoice",
+    "question_text": "<p>A transverse wave on a string has a frequency of 50 Hz and a wavelength of 2 m. What is its wave speed?</p>",
+    "general_feedback": "<p>Wave speed is <em>v = f · λ</em>. Multiplying frequency by wavelength gives 50 × 2 = 100 m/s.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "physics",
+    "tags": [
+      "waves",
+      "frequency",
+      "wavelength"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — v = f · λ.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — the wave equation is v = f · λ.",
+    "answers": [
+      {
+        "text": "100 m/s",
+        "fraction": 100,
+        "feedback": "Right — 50 Hz × 2 m = 100 m/s."
+      },
+      {
+        "text": "25 m/s",
+        "fraction": 0,
+        "feedback": "You divided frequency by wavelength. The correct relation is v = f · λ."
+      },
+      {
+        "text": "52 m/s",
+        "fraction": 0,
+        "feedback": "You added the numbers. Wave speed is the product of frequency and wavelength."
+      },
+      {
+        "text": "0.04 m/s",
+        "fraction": 0,
+        "feedback": "That is λ / f. The wave equation multiplies them, it does not divide."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
   }
 ]
