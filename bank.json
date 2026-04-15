@@ -96,6 +96,102 @@
     ]
   },
   {
+    "idnumber": "mqf-ma04crcl",
+    "name": "Area of a circle with radius 3",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the area of a circle of radius 3?</p>",
+    "general_feedback": "<p>Area of a circle is A = πr². With r = 3, A = π × 3² = 9π ≈ 28.27.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "math",
+    "tags": [
+      "geometry",
+      "circles",
+      "area"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — A = π r² = π × 9 = 9π.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "9π",
+        "fraction": 100,
+        "feedback": "A = π r² = π × 9 = 9π."
+      },
+      {
+        "text": "6π",
+        "fraction": 0,
+        "feedback": "That is the circumference 2πr = 6π, not the area."
+      },
+      {
+        "text": "3π",
+        "fraction": 0,
+        "feedback": "That would be πr, which has no standard geometric meaning here."
+      },
+      {
+        "text": "27π",
+        "fraction": 0,
+        "feedback": "27 is 3³; area uses r², not r³."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv04list",
+    "name": "ArrayList vs LinkedList for random access",
+    "question_type": "multichoice",
+    "question_text": "<p>In the standard Java Collections Framework, what is the expected time complexity of <code>get(index)</code> for an <code>ArrayList</code> and for a <code>LinkedList</code> respectively?</p>",
+    "general_feedback": "<p><code>ArrayList</code> is backed by an array, so indexed access is O(1). <code>LinkedList</code> is a doubly-linked list, so <code>get(index)</code> must walk from the nearest end, giving O(n).</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "collections",
+      "complexity"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Array indexing vs linked traversal.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "ArrayList: O(1), LinkedList: O(n)",
+        "fraction": 100,
+        "feedback": "Array indexing vs linked traversal."
+      },
+      {
+        "text": "ArrayList: O(n), LinkedList: O(1)",
+        "fraction": 0,
+        "feedback": "Reversed — the array-backed list is the one with constant-time indexing."
+      },
+      {
+        "text": "Both O(1)",
+        "fraction": 0,
+        "feedback": "LinkedList indexed access cannot be O(1) without random access."
+      },
+      {
+        "text": "Both O(n)",
+        "fraction": 0,
+        "feedback": "ArrayList indexed access is O(1) because it uses an underlying array."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
     "idnumber": "mqf-c01atmst",
     "name": "Location of positive charge in an atom",
     "question_type": "multichoice",
@@ -137,6 +233,390 @@
         "text": "Electrons, orbiting the nucleus",
         "fraction": 0,
         "feedback": "Electrons do orbit the nucleus, but they carry negative charge, not positive."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv03intg",
+    "name": "Autoboxing Integer cache in Java",
+    "question_type": "multichoice",
+    "question_text": "<p>Consider:</p><pre>Integer a = 127;\nInteger b = 127;\nInteger c = 200;\nInteger d = 200;\nSystem.out.println((a == b) + \" \" + (c == d));</pre><p>What does this print on a typical JVM with default settings?</p>",
+    "general_feedback": "<p>Autoboxing goes through <code>Integer.valueOf</code>, which caches boxed Integers in the range −128 to 127. Values inside the cache share the same Integer instance, so <code>a == b</code> is <code>true</code>. 200 is outside the cache, so <code>c</code> and <code>d</code> are distinct objects and <code>c == d</code> is <code>false</code>.</p>",
+    "difficulty": "hard",
+    "bloom_level": "understand",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "wrappers",
+      "autoboxing"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — 127 is inside the Integer cache (−128..127); 200 is outside, so distinct Integer objects are boxed.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "true false",
+        "fraction": 100,
+        "feedback": "127 is inside the Integer cache (−128..127); 200 is outside, so distinct Integer objects are boxed."
+      },
+      {
+        "text": "true true",
+        "fraction": 0,
+        "feedback": "200 is not cached, so boxing twice creates two different Integer instances."
+      },
+      {
+        "text": "false false",
+        "fraction": 0,
+        "feedback": "127 is inside the default Integer cache, so boxing both times returns the same instance."
+      },
+      {
+        "text": "false true",
+        "fraction": 0,
+        "feedback": "Both outcomes are reversed from what the cache semantics produce."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch04avgd",
+    "name": "Avogadro's number",
+    "question_type": "multichoice",
+    "question_text": "<p>One mole of any pure substance contains approximately how many elementary entities (atoms, molecules, or formula units)?</p>",
+    "general_feedback": "<p>One mole is defined as 6.022 × 10²³ entities (Avogadro's number). This definition links the microscopic scale of atoms/molecules to macroscopic amounts measured in grams.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "chemistry",
+    "tags": [
+      "moles",
+      "constants",
+      "stoichiometry"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — This is Avogadro's number, the number of entities in one mole.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "6.022 × 10²³",
+        "fraction": 100,
+        "feedback": "This is Avogadro's number, the number of entities in one mole."
+      },
+      {
+        "text": "6.022 × 10⁻²³",
+        "fraction": 0,
+        "feedback": "The exponent is negative — far too few particles. Avogadro's number is positive."
+      },
+      {
+        "text": "1.602 × 10⁻¹⁹",
+        "fraction": 0,
+        "feedback": "That is the elementary charge in coulombs, not Avogadro's number."
+      },
+      {
+        "text": "9.81 × 10²³",
+        "fraction": 0,
+        "feedback": "The mantissa is wrong — Avogadro's number starts with 6.022, not 9.81."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch03bal2",
+    "name": "Balancing H2 + O2 → H2O",
+    "question_type": "multichoice",
+    "question_text": "<p>What are the correct coefficients when the equation H₂ + O₂ → H₂O is balanced using the smallest whole-number ratio?</p>",
+    "general_feedback": "<p>The balanced equation is 2 H₂ + O₂ → 2 H₂O. Two molecules of H₂ provide 4 hydrogen atoms, one molecule of O₂ provides 2 oxygen atoms, and those react to form 2 molecules of H₂O (4 H, 2 O).</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "chemistry",
+    "tags": [
+      "stoichiometry",
+      "balancing",
+      "equations"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Hydrogens: 4 on each side; oxygens: 2 on each side.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "2 H₂ + O₂ → 2 H₂O",
+        "fraction": 100,
+        "feedback": "Hydrogens: 4 on each side; oxygens: 2 on each side."
+      },
+      {
+        "text": "H₂ + O₂ → H₂O",
+        "fraction": 0,
+        "feedback": "That leaves one extra oxygen atom on the left — the equation is not balanced."
+      },
+      {
+        "text": "H₂ + O₂ → 2 H₂O",
+        "fraction": 0,
+        "feedback": "Hydrogens do not balance: 2 on the left, 4 on the right."
+      },
+      {
+        "text": "2 H₂ + 2 O₂ → 2 H₂O",
+        "fraction": 0,
+        "feedback": "Oxygens do not balance: 4 on the left, 2 on the right."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch06ionc",
+    "name": "Bond type in NaCl",
+    "question_type": "multichoice",
+    "question_text": "<p>Sodium chloride (NaCl) is held together by which primary bond type?</p>",
+    "general_feedback": "<p>Sodium (a metal) transfers its outer electron to chlorine (a non-metal), producing Na⁺ and Cl⁻ ions. Electrostatic attraction between oppositely charged ions is an ionic bond.</p>",
+    "difficulty": "easy",
+    "bloom_level": "understand",
+    "topic": "chemistry",
+    "tags": [
+      "bonding",
+      "ionic",
+      "covalent"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Electron transfer produces Na⁺ and Cl⁻; the electrostatic attraction is an ionic bond.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Ionic bonding",
+        "fraction": 100,
+        "feedback": "Electron transfer produces Na⁺ and Cl⁻; the electrostatic attraction is an ionic bond."
+      },
+      {
+        "text": "Covalent bonding",
+        "fraction": 0,
+        "feedback": "Covalent bonds share electron pairs between atoms; Na and Cl instead transfer an electron."
+      },
+      {
+        "text": "Metallic bonding",
+        "fraction": 0,
+        "feedback": "Metallic bonding occurs between metal atoms sharing delocalised electrons — NaCl contains a non-metal."
+      },
+      {
+        "text": "Hydrogen bonding",
+        "fraction": 0,
+        "feedback": "Hydrogen bonds are weak intermolecular forces involving H bonded to N, O, or F — not present in NaCl."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv08strt",
+    "name": "Can a static method access an instance field directly?",
+    "question_type": "multichoice",
+    "question_text": "<p>Inside a static method of class <code>Foo</code>, which statement about accessing a non-static (instance) field <code>count</code> is correct?</p>",
+    "general_feedback": "<p>Static methods do not have an implicit <code>this</code> — they are not associated with any particular instance. An instance field can be accessed from a static method only via a specific object reference (for example <code>someFoo.count</code>).</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "static",
+      "oop"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Static methods need an explicit receiver for instance-level state.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "You must qualify it with an instance reference, e.g. someFoo.count.",
+        "fraction": 100,
+        "feedback": "Static methods need an explicit receiver for instance-level state."
+      },
+      {
+        "text": "You can access it directly by its simple name, count.",
+        "fraction": 0,
+        "feedback": "No — there is no implicit this in a static context."
+      },
+      {
+        "text": "You can access it via this.count.",
+        "fraction": 0,
+        "feedback": "this is not available inside static methods."
+      },
+      {
+        "text": "You cannot access an instance field of the class from any static method, ever.",
+        "fraction": 0,
+        "feedback": "You can — as long as you have a reference to an instance (or create one)."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv06excp",
+    "name": "Checked vs unchecked exceptions",
+    "question_type": "multichoice",
+    "question_text": "<p>Which Java class is the root of <strong>unchecked</strong> exceptions that the compiler does not force you to declare or catch?</p>",
+    "general_feedback": "<p><code>java.lang.RuntimeException</code> and its subclasses (and <code>Error</code>) are unchecked. Subclasses of <code>Exception</code> other than <code>RuntimeException</code> are checked and must be declared or handled.</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "exceptions",
+      "error-handling"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — RuntimeException and its subclasses are unchecked.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "RuntimeException",
+        "fraction": 100,
+        "feedback": "RuntimeException and its subclasses are unchecked."
+      },
+      {
+        "text": "Exception",
+        "fraction": 0,
+        "feedback": "Most Exception subclasses are checked; RuntimeException is the unchecked branch."
+      },
+      {
+        "text": "IOException",
+        "fraction": 0,
+        "feedback": "IOException is a checked exception — the compiler forces you to declare or catch it."
+      },
+      {
+        "text": "Throwable",
+        "fraction": 0,
+        "feedback": "Throwable is the common ancestor of all exceptions and errors, not the 'unchecked' root specifically."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ph04mmtm",
+    "name": "Conservation of linear momentum",
+    "question_type": "multichoice",
+    "question_text": "<p>A 2 kg cart moving at 4 m/s collides and sticks to a stationary 2 kg cart on a frictionless track. What is the common velocity of the two carts after the collision?</p>",
+    "general_feedback": "<p>Momentum is conserved: p<sub>i</sub> = (2 kg)(4 m/s) + 0 = 8 kg·m/s. After the inelastic collision the combined mass is 4 kg, so v = 8 / 4 = 2 m/s.</p>",
+    "difficulty": "medium",
+    "bloom_level": "apply",
+    "topic": "physics",
+    "tags": [
+      "mechanics",
+      "momentum",
+      "collisions"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Total momentum / total mass = 8 / 4 = 2 m/s.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "2 m/s",
+        "fraction": 100,
+        "feedback": "Total momentum / total mass = 8 / 4 = 2 m/s."
+      },
+      {
+        "text": "4 m/s",
+        "fraction": 0,
+        "feedback": "That would violate conservation of momentum — momentum is shared over the new combined mass."
+      },
+      {
+        "text": "8 m/s",
+        "fraction": 0,
+        "feedback": "That is the total momentum in kg·m/s, not a velocity."
+      },
+      {
+        "text": "1 m/s",
+        "fraction": 0,
+        "feedback": "You divided by 8 instead of by the combined mass of 4 kg."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-py03dflg",
+    "name": "Default mutable argument gotcha",
+    "question_type": "multichoice",
+    "question_text": "<p>Consider:</p><pre>def add(x, acc=[]):\n    acc.append(x)\n    return acc\n\nprint(add(1))\nprint(add(2))</pre><p>What is printed?</p>",
+    "general_feedback": "<p>Default argument values are evaluated once, at function definition. The same list object is reused across calls, so each call appends to it. Fix by using <code>acc=None</code> and assigning <code>acc = []</code> inside when None.</p>",
+    "difficulty": "hard",
+    "bloom_level": "understand",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "functions",
+      "default-arguments"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — The default list is shared across calls, so its contents accumulate.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "[1] then [1, 2]",
+        "fraction": 100,
+        "feedback": "The default list is shared across calls, so its contents accumulate."
+      },
+      {
+        "text": "[1] then [2]",
+        "fraction": 0,
+        "feedback": "That would require a fresh list per call, which does not happen with a mutable default."
+      },
+      {
+        "text": "[1, 2] then [1, 2]",
+        "fraction": 0,
+        "feedback": "The first call sees only x=1; 2 is appended only on the second call."
+      },
+      {
+        "text": "[2] then [1, 2]",
+        "fraction": 0,
+        "feedback": "The first call appends 1 first; calls run in order."
       }
     ],
     "submitter": "@danielcregg",
@@ -192,6 +672,150 @@
     "validation_score": 10
   },
   {
+    "idnumber": "mqf-py04gett",
+    "name": "dict.get with default",
+    "question_type": "multichoice",
+    "question_text": "<p>Given <code>d = {\"a\": 1}</code>, what does <code>d.get(\"b\", 0)</code> return?</p>",
+    "general_feedback": "<p><code>dict.get(key, default)</code> returns <code>d[key]</code> if the key is present and <code>default</code> otherwise, without raising. Here <code>\"b\"</code> is missing, so <code>0</code> is returned.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "dict",
+      "api"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Key 'b' is missing, so the provided default is returned.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "0",
+        "fraction": 100,
+        "feedback": "Key 'b' is missing, so the provided default is returned."
+      },
+      {
+        "text": "None",
+        "fraction": 0,
+        "feedback": "get returns None only when no default is supplied; here the default is 0."
+      },
+      {
+        "text": "Raises a KeyError",
+        "fraction": 0,
+        "feedback": "dict.get never raises KeyError — it returns the default instead."
+      },
+      {
+        "text": "1",
+        "fraction": 0,
+        "feedback": "1 is d['a']; get was called with key 'b', not 'a'."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv07intf",
+    "name": "Difference between interface and abstract class (Java 8+)",
+    "question_type": "multichoice",
+    "question_text": "<p>In Java 8 and later, which statement about interfaces versus abstract classes is correct?</p>",
+    "general_feedback": "<p>A class can implement many interfaces but extend only one class (abstract or concrete). Abstract classes can hold mutable instance state and non-public constructors; interfaces cannot hold mutable instance fields (only public static final constants) and have no constructors. Both can now define concrete methods (via <code>default</code>/<code>static</code> methods on interfaces, regular methods on abstract classes).</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "oop",
+      "interfaces"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Java supports multiple interface inheritance but only single class inheritance.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "A class may implement multiple interfaces but may extend only one (abstract) class.",
+        "fraction": 100,
+        "feedback": "Java supports multiple interface inheritance but only single class inheritance."
+      },
+      {
+        "text": "An interface can hold mutable instance fields just like an abstract class.",
+        "fraction": 0,
+        "feedback": "Interface fields are implicitly public static final — not mutable per-instance."
+      },
+      {
+        "text": "Abstract classes cannot contain constructors.",
+        "fraction": 0,
+        "feedback": "Abstract classes can define constructors, invoked by subclasses via super(...)."
+      },
+      {
+        "text": "Interfaces cannot have any method bodies at all.",
+        "fraction": 0,
+        "feedback": "Since Java 8, interfaces allow default and static methods with bodies."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ph08cntr",
+    "name": "Direction of centripetal force",
+    "question_type": "multichoice",
+    "question_text": "<p>An object moves in a circle at constant speed. In what direction does the net force on the object point?</p>",
+    "general_feedback": "<p>Uniform circular motion requires an acceleration directed toward the centre of the circle (centripetal acceleration). By Newton's second law the net force is in that same direction — toward the centre.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "physics",
+    "tags": [
+      "mechanics",
+      "circular-motion",
+      "forces"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Centripetal means 'centre-seeking' — the net force is radially inward.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Toward the centre of the circle",
+        "fraction": 100,
+        "feedback": "Centripetal means 'centre-seeking' — the net force is radially inward."
+      },
+      {
+        "text": "Away from the centre of the circle",
+        "fraction": 0,
+        "feedback": "An outward force would push the object away; circular motion requires a centre-directed net force."
+      },
+      {
+        "text": "In the direction of motion",
+        "fraction": 0,
+        "feedback": "A force along the velocity would speed the object up; at constant speed the net force must be perpendicular to the velocity."
+      },
+      {
+        "text": "Opposite to the direction of motion",
+        "fraction": 0,
+        "feedback": "That would slow the object; at constant speed the net force is perpendicular to the velocity, not anti-parallel to it."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
     "idnumber": "mqf-b02dnabp",
     "name": "DNA complementary base for adenine",
     "question_type": "multichoice",
@@ -233,6 +857,627 @@
         "text": "Cytosine",
         "fraction": 0,
         "feedback": "Cytosine pairs with guanine in the other Watson–Crick pair."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-bi10kngd",
+    "name": "Domains of life in modern classification",
+    "question_type": "multichoice",
+    "question_text": "<p>Which three domains are recognised in the modern three-domain system of biological classification?</p>",
+    "general_feedback": "<p>Carl Woese's three-domain system groups cellular life into Bacteria, Archaea, and Eukarya, reflecting deep rRNA-based differences. Viruses are not included because they are not cellular.</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "biology",
+    "tags": [
+      "taxonomy",
+      "classification"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — The three-domain system introduced by Woese, based on ribosomal RNA phylogeny.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Bacteria, Archaea, Eukarya",
+        "fraction": 100,
+        "feedback": "The three-domain system introduced by Woese, based on ribosomal RNA phylogeny."
+      },
+      {
+        "text": "Plantae, Animalia, Fungi",
+        "fraction": 0,
+        "feedback": "Those are kingdoms within Eukarya, not domains."
+      },
+      {
+        "text": "Prokaryota, Eukaryota, Virales",
+        "fraction": 0,
+        "feedback": "Viruses are not classified as a domain of cellular life in the three-domain system."
+      },
+      {
+        "text": "Monera, Protista, Metazoa",
+        "fraction": 0,
+        "feedback": "These are older or kingdom-level names and do not form the modern three-domain system."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ph10dppr",
+    "name": "Doppler effect — approaching source",
+    "question_type": "multichoice",
+    "question_text": "<p>You are standing still and an ambulance siren moves toward you at constant speed. Compared with the sound emitted by the siren, what do you hear?</p>",
+    "general_feedback": "<p>When a source moves toward a stationary observer, successive wave fronts are emitted from closer positions, shortening the observed wavelength and raising the observed frequency (higher pitch). After the source passes, the pitch drops.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "physics",
+    "tags": [
+      "waves",
+      "doppler",
+      "sound"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Approaching source → compressed wavefronts → higher observed frequency.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "A higher pitch than the emitted sound.",
+        "fraction": 100,
+        "feedback": "Approaching source → compressed wavefronts → higher observed frequency."
+      },
+      {
+        "text": "A lower pitch than the emitted sound.",
+        "fraction": 0,
+        "feedback": "That applies to a receding source, not an approaching one."
+      },
+      {
+        "text": "The same pitch, but louder.",
+        "fraction": 0,
+        "feedback": "Loudness may change with distance but the perceived frequency also shifts; pitch is not unchanged."
+      },
+      {
+        "text": "No sound until the ambulance reaches you.",
+        "fraction": 0,
+        "feedback": "Sound propagates through the air continuously; the observer hears the siren throughout its approach."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch09exot",
+    "name": "Exothermic reaction sign of ΔH",
+    "question_type": "multichoice",
+    "question_text": "<p>In an exothermic reaction, what is the sign of the enthalpy change (ΔH)?</p>",
+    "general_feedback": "<p>Exothermic reactions release heat to the surroundings, so the system's enthalpy decreases. By convention ΔH = H<sub>products</sub> − H<sub>reactants</sub> is negative.</p>",
+    "difficulty": "easy",
+    "bloom_level": "understand",
+    "topic": "chemistry",
+    "tags": [
+      "thermochemistry",
+      "enthalpy"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Heat is released, so the system loses enthalpy; ΔH < 0.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Negative",
+        "fraction": 100,
+        "feedback": "Heat is released, so the system loses enthalpy; ΔH < 0."
+      },
+      {
+        "text": "Positive",
+        "fraction": 0,
+        "feedback": "Positive ΔH means the system absorbs heat — that is endothermic, the opposite case."
+      },
+      {
+        "text": "Zero",
+        "fraction": 0,
+        "feedback": "Zero ΔH would mean no net heat exchange; exothermic reactions release heat."
+      },
+      {
+        "text": "Undefined",
+        "fraction": 0,
+        "feedback": "ΔH is well-defined for any reaction with specified states; exothermic means ΔH < 0."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-py07fstr",
+    "name": "f-string expression evaluation",
+    "question_type": "multichoice",
+    "question_text": "<p>What does the following f-string evaluate to, given <code>x = 3</code>?</p><pre>f\"x squared is {x ** 2}\"</pre>",
+    "general_feedback": "<p>Inside an f-string, expressions between <code>{ }</code> are evaluated and substituted. <code>x ** 2</code> with x = 3 is 9, so the string becomes <code>'x squared is 9'</code>.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "strings",
+      "f-strings"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — The expression x ** 2 is evaluated and inserted.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "'x squared is 9'",
+        "fraction": 100,
+        "feedback": "The expression x ** 2 is evaluated and inserted."
+      },
+      {
+        "text": "'x squared is x ** 2'",
+        "fraction": 0,
+        "feedback": "f-strings evaluate the expression inside braces rather than printing it literally."
+      },
+      {
+        "text": "'x squared is {9}'",
+        "fraction": 0,
+        "feedback": "The braces are part of the f-string syntax and are not retained in the output."
+      },
+      {
+        "text": "A SyntaxError",
+        "fraction": 0,
+        "feedback": "f-strings support arbitrary Python expressions inside braces."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ph09thrm",
+    "name": "First law of thermodynamics",
+    "question_type": "multichoice",
+    "question_text": "<p>Which statement best expresses the first law of thermodynamics?</p>",
+    "general_feedback": "<p>The first law is the thermodynamic statement of energy conservation: the change in internal energy of a system equals the heat added to the system minus the work done by the system (ΔU = Q − W). Energy is neither created nor destroyed; it changes form.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "physics",
+    "tags": [
+      "thermodynamics",
+      "energy"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — This is exactly the first law — the thermodynamic statement of energy conservation.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Energy is conserved; it changes form but is not created or destroyed.",
+        "fraction": 100,
+        "feedback": "This is exactly the first law — the thermodynamic statement of energy conservation."
+      },
+      {
+        "text": "Heat always flows spontaneously from cold to hot.",
+        "fraction": 0,
+        "feedback": "That contradicts the second law, which says heat flows from hot to cold without external work."
+      },
+      {
+        "text": "Entropy of an isolated system always decreases.",
+        "fraction": 0,
+        "feedback": "The second law states entropy of an isolated system never decreases, not the first law."
+      },
+      {
+        "text": "No heat engine can convert heat entirely into work in a single cycle.",
+        "fraction": 0,
+        "feedback": "That is the Kelvin statement of the second law, not the first."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv09lmbd",
+    "name": "Functional interface for an int-to-int lambda",
+    "question_type": "multichoice",
+    "question_text": "<p>Which functional interface from <code>java.util.function</code> most directly matches a lambda that takes a single <code>int</code> and returns an <code>int</code>, avoiding boxing?</p>",
+    "general_feedback": "<p><code>IntUnaryOperator</code> is specialised for <code>int → int</code> without boxing. <code>Function&lt;Integer, Integer&gt;</code> works but forces boxing on both sides; <code>UnaryOperator&lt;Integer&gt;</code> likewise.</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "lambdas",
+      "functional-interfaces"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Primitive specialisation: int input, int output, no boxing.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "IntUnaryOperator",
+        "fraction": 100,
+        "feedback": "Primitive specialisation: int input, int output, no boxing."
+      },
+      {
+        "text": "Function<Integer, Integer>",
+        "fraction": 0,
+        "feedback": "It works but boxes both arguments and results; IntUnaryOperator is the primitive specialisation."
+      },
+      {
+        "text": "Supplier<Integer>",
+        "fraction": 0,
+        "feedback": "Supplier takes no input, so it cannot model a function of one argument."
+      },
+      {
+        "text": "Consumer<Integer>",
+        "fraction": 0,
+        "feedback": "Consumer returns void; it cannot produce a result."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-py09yild",
+    "name": "Generator using yield",
+    "question_type": "multichoice",
+    "question_text": "<p>What does a function that contains a <code>yield</code> statement become in Python?</p>",
+    "general_feedback": "<p>Any function containing <code>yield</code> is compiled into a generator function. Calling it does not run the body — it returns a generator object that produces values lazily as it is iterated (via <code>next</code> or a for-loop).</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "generators",
+      "yield"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — yield turns the function into a lazy iterator factory.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "A generator function whose call returns a generator object.",
+        "fraction": 100,
+        "feedback": "yield turns the function into a lazy iterator factory."
+      },
+      {
+        "text": "A coroutine that is scheduled on the event loop.",
+        "fraction": 0,
+        "feedback": "Coroutines are declared with async def; yield alone does not create one."
+      },
+      {
+        "text": "A regular function that returns the first yielded value.",
+        "fraction": 0,
+        "feedback": "Calling a generator function does not execute the body; it returns a generator."
+      },
+      {
+        "text": "A syntax error, because yield is only valid in async code.",
+        "fraction": 0,
+        "feedback": "yield is valid in ordinary functions and creates a generator."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv10gnrc",
+    "name": "Generic bounded wildcard for reading",
+    "question_type": "multichoice",
+    "question_text": "<p>You want to write a method that reads elements from a list of Number or any subtype (Integer, Double, etc.). Which parameter type best expresses this?</p>",
+    "general_feedback": "<p>The PECS rule (Producer Extends, Consumer Super) says use <code>? extends T</code> when reading from a collection (it produces Ts). <code>List&lt;? extends Number&gt;</code> lets the method accept <code>List&lt;Integer&gt;</code>, <code>List&lt;Double&gt;</code>, etc. but forbids adding non-null elements.</p>",
+    "difficulty": "hard",
+    "bloom_level": "understand",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "generics",
+      "wildcards"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Producer Extends — accept any List of Number or subtype for reading.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "List<? extends Number>",
+        "fraction": 100,
+        "feedback": "Producer Extends — accept any List of Number or subtype for reading."
+      },
+      {
+        "text": "List<Number>",
+        "fraction": 0,
+        "feedback": "Invariance — List<Number> does NOT accept List<Integer>."
+      },
+      {
+        "text": "List<? super Number>",
+        "fraction": 0,
+        "feedback": "? super is for consuming (writing), not reading a Number subtype."
+      },
+      {
+        "text": "List<?>",
+        "fraction": 0,
+        "feedback": "Too loose — you couldn't even guarantee elements are Numbers."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ph07gryt",
+    "name": "Gravitational acceleration on Earth's surface",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the approximate magnitude of gravitational acceleration on Earth's surface at sea level?</p>",
+    "general_feedback": "<p>Near sea level the standard value is <em>g</em> ≈ 9.81 m/s² (often rounded to 9.8 or 10 m/s² for quick calculations).</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "physics",
+    "tags": [
+      "mechanics",
+      "gravity",
+      "constants"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Standard approximate value at Earth's surface.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "9.8 m/s²",
+        "fraction": 100,
+        "feedback": "Standard approximate value at Earth's surface."
+      },
+      {
+        "text": "1.6 m/s²",
+        "fraction": 0,
+        "feedback": "That is approximately the surface gravity of the Moon."
+      },
+      {
+        "text": "98 m/s²",
+        "fraction": 0,
+        "feedback": "You moved the decimal one place too far to the right."
+      },
+      {
+        "text": "3.7 m/s²",
+        "fraction": 0,
+        "feedback": "That is approximately the surface gravity of Mars."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch10cbnc",
+    "name": "Ground-state electron configuration of carbon",
+    "question_type": "multichoice",
+    "question_text": "<p>Carbon has atomic number 6. Which is its correct ground-state electron configuration?</p>",
+    "general_feedback": "<p>Carbon's six electrons fill lowest-energy orbitals first: 1s² (2 electrons), 2s² (2 electrons), and 2p² (2 electrons), giving 1s² 2s² 2p².</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "chemistry",
+    "tags": [
+      "electron-configuration",
+      "atomic-structure"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Follows the Aufbau order for Z = 6.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "1s² 2s² 2p²",
+        "fraction": 100,
+        "feedback": "Follows the Aufbau order for Z = 6."
+      },
+      {
+        "text": "1s² 2s² 2p⁶",
+        "fraction": 0,
+        "feedback": "That is neon (Z = 10), not carbon."
+      },
+      {
+        "text": "1s² 2s¹ 2p³",
+        "fraction": 0,
+        "feedback": "That would total six electrons but skips full 2s occupancy; the ground state fills 2s before 2p."
+      },
+      {
+        "text": "1s² 2p⁴",
+        "fraction": 0,
+        "feedback": "That skips the 2s subshell entirely, which is lower energy than 2p."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv05hshm",
+    "name": "HashMap requires what from a custom key?",
+    "question_type": "multichoice",
+    "question_text": "<p>If you use an instance of a custom class as a key in a <code>HashMap</code>, which methods must be implemented correctly on that class for the map to behave reliably?</p>",
+    "general_feedback": "<p>HashMap buckets entries by <code>hashCode()</code> and then resolves bucket collisions with <code>equals()</code>. Keys that are equal according to <code>equals</code> must return the same <code>hashCode</code>; otherwise lookups can silently fail.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "collections",
+      "hashmap",
+      "equals-hashcode"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — HashMap needs a consistent hash-to-bucket mapping and correct equality inside each bucket.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Both equals and hashCode",
+        "fraction": 100,
+        "feedback": "HashMap needs a consistent hash-to-bucket mapping and correct equality inside each bucket."
+      },
+      {
+        "text": "Only equals",
+        "fraction": 0,
+        "feedback": "Without hashCode, two 'equal' keys can land in different buckets and never match."
+      },
+      {
+        "text": "Only hashCode",
+        "fraction": 0,
+        "feedback": "Without equals, HashMap cannot tell two hash-equal keys apart inside a bucket."
+      },
+      {
+        "text": "Only Comparable.compareTo",
+        "fraction": 0,
+        "feedback": "compareTo is relevant for TreeMap/sorted sets, not for HashMap."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-bi06chrm",
+    "name": "Human somatic chromosome count",
+    "question_type": "multichoice",
+    "question_text": "<p>How many chromosomes are typically found in a human somatic (non-reproductive) cell?</p>",
+    "general_feedback": "<p>Humans are diploid with 23 pairs of chromosomes — 22 autosome pairs plus one pair of sex chromosomes — for a total of 46 chromosomes per somatic cell. Gametes have 23 (haploid).</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "biology",
+    "tags": [
+      "genetics",
+      "chromosomes",
+      "human-biology"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — 23 pairs × 2 = 46 chromosomes in a diploid human somatic cell.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "46",
+        "fraction": 100,
+        "feedback": "23 pairs × 2 = 46 chromosomes in a diploid human somatic cell."
+      },
+      {
+        "text": "23",
+        "fraction": 0,
+        "feedback": "That is the haploid number found in gametes, not in somatic cells."
+      },
+      {
+        "text": "92",
+        "fraction": 0,
+        "feedback": "That would be twice the diploid number — e.g. a cell that has replicated DNA but not divided."
+      },
+      {
+        "text": "48",
+        "fraction": 0,
+        "feedback": "48 is the diploid chromosome count of chimpanzees and gorillas, not humans."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ma06intx",
+    "name": "Indefinite integral of x²",
+    "question_type": "multichoice",
+    "question_text": "<p>What is ∫ x² dx?</p>",
+    "general_feedback": "<p>By the power rule, ∫ xⁿ dx = xⁿ⁺¹ / (n + 1) + C for n ≠ −1. With n = 2 this is x³ / 3 + C.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "math",
+    "tags": [
+      "calculus",
+      "integration",
+      "power-rule"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Power rule for integration with n = 2.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "x³/3 + C",
+        "fraction": 100,
+        "feedback": "Power rule for integration with n = 2."
+      },
+      {
+        "text": "2x + C",
+        "fraction": 0,
+        "feedback": "That is the derivative of x², not its integral."
+      },
+      {
+        "text": "x³ + C",
+        "fraction": 0,
+        "feedback": "You forgot to divide by (n + 1) = 3."
+      },
+      {
+        "text": "x²/2 + C",
+        "fraction": 0,
+        "feedback": "That is the antiderivative of x, not of x²."
       }
     ],
     "submitter": "@danielcregg",
@@ -288,6 +1533,246 @@
     "validation_score": 10
   },
   {
+    "idnumber": "mqf-ph03kene",
+    "name": "Kinetic energy formula",
+    "question_type": "multichoice",
+    "question_text": "<p>A 2 kg object moves at 3 m/s. What is its kinetic energy?</p>",
+    "general_feedback": "<p>Kinetic energy is <em>KE</em> = ½ m v². Substituting: ½ × 2 × 3² = 9 J.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "physics",
+    "tags": [
+      "mechanics",
+      "energy",
+      "kinetic-energy"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — ½ × 2 × 3² = 9 J.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "9 J",
+        "fraction": 100,
+        "feedback": "½ × 2 × 3² = 9 J."
+      },
+      {
+        "text": "6 J",
+        "fraction": 0,
+        "feedback": "You computed m·v, not ½·m·v²."
+      },
+      {
+        "text": "18 J",
+        "fraction": 0,
+        "feedback": "You forgot the factor of ½ in ½ m v²."
+      },
+      {
+        "text": "3 J",
+        "fraction": 0,
+        "feedback": "You computed ½·m·v, not ½·m·v²."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ma09logp",
+    "name": "Logarithm product rule",
+    "question_type": "multichoice",
+    "question_text": "<p>For positive real numbers a and b with a common base, which identity is correct?</p>",
+    "general_feedback": "<p>Logarithm rules: log(ab) = log a + log b; log(a/b) = log a − log b; log(aⁿ) = n · log a. Products turn into sums under the log.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "math",
+    "tags": [
+      "logarithms",
+      "algebra",
+      "identities"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Products become sums under the logarithm.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "log(ab) = log a + log b",
+        "fraction": 100,
+        "feedback": "Products become sums under the logarithm."
+      },
+      {
+        "text": "log(a + b) = log a + log b",
+        "fraction": 0,
+        "feedback": "Logs do not distribute over addition — only over multiplication."
+      },
+      {
+        "text": "log(ab) = log a · log b",
+        "fraction": 0,
+        "feedback": "Multiplying logs is not the same as the log of a product."
+      },
+      {
+        "text": "log(a/b) = log a + log b",
+        "fraction": 0,
+        "feedback": "Division gives a difference of logs (log a − log b), not a sum."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-bi04miom",
+    "name": "Mitosis vs meiosis — daughter cells",
+    "question_type": "multichoice",
+    "question_text": "<p>Starting from a single diploid somatic cell, mitosis produces how many daughter cells, and what is their ploidy?</p>",
+    "general_feedback": "<p>Mitosis divides one diploid (2n) cell into two genetically identical diploid daughter cells. Meiosis, in contrast, produces four haploid (n) gametes from one diploid precursor.</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "biology",
+    "tags": [
+      "cell-division",
+      "genetics",
+      "chromosomes"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Mitosis yields two 2n cells, genetically identical to the parent.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "2 diploid cells",
+        "fraction": 100,
+        "feedback": "Mitosis yields two 2n cells, genetically identical to the parent."
+      },
+      {
+        "text": "4 haploid cells",
+        "fraction": 0,
+        "feedback": "That is the outcome of meiosis, not mitosis."
+      },
+      {
+        "text": "4 diploid cells",
+        "fraction": 0,
+        "feedback": "Mitosis produces two daughter cells, not four."
+      },
+      {
+        "text": "2 haploid cells",
+        "fraction": 0,
+        "feedback": "Mitosis does not halve chromosome number; the daughter cells remain diploid."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-py02mutt",
+    "name": "Mutability of Python tuples vs lists",
+    "question_type": "multichoice",
+    "question_text": "<p>Which of the following statements about Python built-in types is correct?</p>",
+    "general_feedback": "<p>Lists are mutable — their elements can be reassigned or appended in place. Tuples are immutable — once constructed, their elements cannot be rebound. (The objects referenced by a tuple can themselves be mutable, but the tuple slots are fixed.)</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "mutability",
+      "data-structures"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Standard Python semantics.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Lists are mutable; tuples are immutable.",
+        "fraction": 100,
+        "feedback": "Standard Python semantics."
+      },
+      {
+        "text": "Lists are immutable; tuples are mutable.",
+        "fraction": 0,
+        "feedback": "Reversed — list has append/extend/__setitem__; tuple does not."
+      },
+      {
+        "text": "Both lists and tuples are immutable.",
+        "fraction": 0,
+        "feedback": "Lists have in-place mutation via append, pop, and item assignment."
+      },
+      {
+        "text": "Both lists and tuples are mutable.",
+        "fraction": 0,
+        "feedback": "Tuple objects cannot be modified after construction."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-bi07nats",
+    "name": "Natural selection core mechanism",
+    "question_type": "multichoice",
+    "question_text": "<p>Which of these best describes the mechanism of natural selection as proposed by Darwin and Wallace?</p>",
+    "general_feedback": "<p>Natural selection requires heritable variation in a trait, a difference in survival or reproductive success linked to that variation, and transmission of the advantageous variants to the next generation. Over many generations allele frequencies shift.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "biology",
+    "tags": [
+      "evolution",
+      "natural-selection",
+      "darwin"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Variation + differential fitness + heredity drives natural selection.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Heritable variants that improve survival or reproduction become more common over generations.",
+        "fraction": 100,
+        "feedback": "Variation + differential fitness + heredity drives natural selection."
+      },
+      {
+        "text": "Organisms consciously change their bodies to better fit their environment.",
+        "fraction": 0,
+        "feedback": "That is Lamarckism (inheritance of acquired characteristics), which is not how natural selection works."
+      },
+      {
+        "text": "All species steadily progress toward a predetermined goal of perfection.",
+        "fraction": 0,
+        "feedback": "Evolution has no fixed target; it is a response to current selective pressures."
+      },
+      {
+        "text": "Random mutations are always beneficial and quickly spread through a population.",
+        "fraction": 0,
+        "feedback": "Most mutations are neutral or harmful; only those that increase fitness in the current environment tend to spread."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
     "idnumber": "mqf-p01nstwl",
     "name": "Newton's second law — net force",
     "question_type": "multichoice",
@@ -329,6 +1814,149 @@
         "text": "0.67 N",
         "fraction": 0,
         "feedback": "That is m / a. The correct formula is F = m · a."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch05nble",
+    "name": "Noble gases — group number",
+    "question_type": "multichoice",
+    "question_text": "<p>Which group of the modern periodic table contains the noble gases (helium, neon, argon, etc.)?</p>",
+    "general_feedback": "<p>Noble gases occupy group 18, the right-most column of the periodic table. Their full outer electron shells make them chemically unreactive under most conditions.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "chemistry",
+    "tags": [
+      "periodic-table",
+      "elements",
+      "group"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Group 18 (the final column) houses He, Ne, Ar, Kr, Xe, and Rn.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Group 18",
+        "fraction": 100,
+        "feedback": "Group 18 (the final column) houses He, Ne, Ar, Kr, Xe, and Rn."
+      },
+      {
+        "text": "Group 1",
+        "fraction": 0,
+        "feedback": "Group 1 contains the alkali metals — very reactive, the opposite of noble gases."
+      },
+      {
+        "text": "Group 17",
+        "fraction": 0,
+        "feedback": "Group 17 is the halogens; noble gases are one column further right."
+      },
+      {
+        "text": "Group 14",
+        "fraction": 0,
+        "feedback": "Group 14 contains C, Si, Ge, Sn, Pb — not noble gases."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ph05ohms",
+    "name": "Ohm's law — current in a resistor",
+    "question_type": "multichoice",
+    "question_text": "<p>A 12 V battery is connected across a 4 Ω resistor. What current flows through the resistor?</p>",
+    "general_feedback": "<p>Ohm's law gives <em>I</em> = V / R = 12 / 4 = 3 A.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "physics",
+    "tags": [
+      "electricity",
+      "ohms-law",
+      "resistors"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — 12 V / 4 Ω = 3 A.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "3 A",
+        "fraction": 100,
+        "feedback": "12 V / 4 Ω = 3 A."
+      },
+      {
+        "text": "48 A",
+        "fraction": 0,
+        "feedback": "You multiplied V × R. Ohm's law divides V by R."
+      },
+      {
+        "text": "0.33 A",
+        "fraction": 0,
+        "feedback": "You inverted the ratio. Current is voltage divided by resistance, not resistance divided by voltage."
+      },
+      {
+        "text": "8 A",
+        "fraction": 0,
+        "feedback": "You subtracted R from V. Ohm's law is a ratio, not a difference."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch08oxdh",
+    "name": "Oxidation number of oxygen in water",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the oxidation number of oxygen in H₂O?</p>",
+    "general_feedback": "<p>In almost all common compounds, oxygen has an oxidation number of −2. Hydrogen contributes +1 each, so 2 × (+1) + (−2) = 0, matching H₂O's overall neutral charge.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "chemistry",
+    "tags": [
+      "redox",
+      "oxidation-number"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Standard oxidation number for oxygen in water and most oxides.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "−2",
+        "fraction": 100,
+        "feedback": "Standard oxidation number for oxygen in water and most oxides."
+      },
+      {
+        "text": "+2",
+        "fraction": 0,
+        "feedback": "Positive oxidation numbers for oxygen are rare (e.g. OF₂); in water it is negative."
+      },
+      {
+        "text": "0",
+        "fraction": 0,
+        "feedback": "Elemental oxygen (O₂) is 0, but the O atom in a compound such as water is not elemental."
+      },
+      {
+        "text": "−1",
+        "fraction": 0,
+        "feedback": "−1 applies to peroxides (like H₂O₂); regular water is −2."
       }
     ],
     "submitter": "@danielcregg",
@@ -384,6 +2012,54 @@
     "validation_score": 10
   },
   {
+    "idnumber": "mqf-bi03phtn",
+    "name": "Photosynthesis inputs and outputs",
+    "question_type": "multichoice",
+    "question_text": "<p>Which statement correctly summarises the overall inputs and outputs of photosynthesis in plants?</p>",
+    "general_feedback": "<p>Photosynthesis takes carbon dioxide and water and, using light energy, produces glucose (a sugar) and molecular oxygen: 6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂.</p>",
+    "difficulty": "easy",
+    "bloom_level": "understand",
+    "topic": "biology",
+    "tags": [
+      "photosynthesis",
+      "plants",
+      "metabolism"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — This is the summary equation of photosynthesis.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "CO₂ + H₂O → glucose + O₂ (with light energy)",
+        "fraction": 100,
+        "feedback": "This is the summary equation of photosynthesis."
+      },
+      {
+        "text": "Glucose + O₂ → CO₂ + H₂O (with ATP)",
+        "fraction": 0,
+        "feedback": "That is cellular respiration, which breaks glucose down rather than building it."
+      },
+      {
+        "text": "CO₂ + O₂ → glucose + H₂O",
+        "fraction": 0,
+        "feedback": "Photosynthesis consumes water, not oxygen; oxygen is a product."
+      },
+      {
+        "text": "H₂O + sunlight → CO₂ + O₂",
+        "fraction": 0,
+        "feedback": "This omits glucose and has water, not CO₂, consumed — not the correct summary."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
     "idnumber": "mqf-b01mtchn",
     "name": "Organelle that produces most ATP",
     "question_type": "multichoice",
@@ -425,6 +2101,53 @@
         "text": "Golgi apparatus",
         "fraction": 0,
         "feedback": "The Golgi sorts and modifies proteins for secretion; it does not carry out respiration."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ma08prob",
+    "name": "Probability of rolling a six on one die",
+    "question_type": "multichoice",
+    "question_text": "<p>A fair six-sided die is rolled once. What is the probability of rolling a six?</p>",
+    "general_feedback": "<p>There are six equally likely outcomes {1, 2, 3, 4, 5, 6}, and rolling a six is one of them, so the probability is 1/6.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "math",
+    "tags": [
+      "probability",
+      "combinatorics"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — One favourable outcome out of six equally likely outcomes.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "1/6",
+        "fraction": 100,
+        "feedback": "One favourable outcome out of six equally likely outcomes."
+      },
+      {
+        "text": "1/3",
+        "fraction": 0,
+        "feedback": "That is the probability of rolling an even number, not of rolling a specific face."
+      },
+      {
+        "text": "1/2",
+        "fraction": 0,
+        "feedback": "That is the probability of rolling an even (or odd) number, not of a specific face."
+      },
+      {
+        "text": "1/36",
+        "fraction": 0,
+        "feedback": "1/36 is the probability of a specific pair when rolling two dice, not one."
       }
     ],
     "submitter": "@danielcregg",
@@ -480,6 +2203,54 @@
     "validation_score": 10
   },
   {
+    "idnumber": "mqf-py06isop",
+    "name": "Python is vs == for small integers",
+    "question_type": "multichoice",
+    "question_text": "<p>Which comparison best reflects the correct use of <code>is</code> versus <code>==</code> in Python?</p>",
+    "general_feedback": "<p><code>==</code> tests value equality; <code>is</code> tests object identity (same object in memory). For checking values, always prefer <code>==</code>. <code>is</code> is appropriate for singletons such as <code>None</code> — hence the idiomatic <code>if x is None</code>.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "identity",
+      "equality"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Standard Python guidance.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Use == for value comparison; use is to check identity with singletons like None.",
+        "fraction": 100,
+        "feedback": "Standard Python guidance."
+      },
+      {
+        "text": "is and == are interchangeable.",
+        "fraction": 0,
+        "feedback": "They differ: is can be False even when == is True if the objects are distinct."
+      },
+      {
+        "text": "Always use is for better performance.",
+        "fraction": 0,
+        "feedback": "is does not compare values; relying on it for equality is a common bug (e.g. 'a' is 'a' is implementation-dependent)."
+      },
+      {
+        "text": "== checks identity; is checks value equality.",
+        "fraction": 0,
+        "feedback": "Reversed — is checks identity, == checks value equality."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
     "idnumber": "mqf-p01lstcp",
     "name": "Python list comprehension output",
     "question_type": "multichoice",
@@ -528,6 +2299,533 @@
     "validation_score": 10
   },
   {
+    "idnumber": "mqf-py05slic",
+    "name": "Python slicing step",
+    "question_type": "multichoice",
+    "question_text": "<p>What does <code>\"abcdef\"[::2]</code> evaluate to?</p>",
+    "general_feedback": "<p>The slice syntax is <code>start:stop:step</code>. Empty start and stop mean 'whole string'; step = 2 keeps every second character starting from index 0: a, c, e.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "slicing",
+      "strings"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Step of 2 from index 0 picks a, c, e.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "'ace'",
+        "fraction": 100,
+        "feedback": "Step of 2 from index 0 picks a, c, e."
+      },
+      {
+        "text": "'bdf'",
+        "fraction": 0,
+        "feedback": "That would be step 2 starting from index 1, i.e. 'abcdef'[1::2]."
+      },
+      {
+        "text": "'abcdef'",
+        "fraction": 0,
+        "feedback": "That ignores the step — it would be 'abcdef'[::] or 'abcdef'[::1]."
+      },
+      {
+        "text": "'fedcba'",
+        "fraction": 0,
+        "feedback": "Reversal uses step −1, not 2."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-bi05enzm",
+    "name": "Role of enzymes",
+    "question_type": "multichoice",
+    "question_text": "<p>Which statement best describes the role of an enzyme in a biochemical reaction?</p>",
+    "general_feedback": "<p>Enzymes are biological catalysts that lower a reaction's activation energy, allowing it to proceed faster at cellular temperatures. They are not consumed and do not shift the equilibrium position.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "biology",
+    "tags": [
+      "enzymes",
+      "biochemistry",
+      "catalysis"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Enzymes are catalysts — they accelerate reactions by reducing the activation energy barrier.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Lowers the activation energy without being consumed.",
+        "fraction": 100,
+        "feedback": "Enzymes are catalysts — they accelerate reactions by reducing the activation energy barrier."
+      },
+      {
+        "text": "Supplies the energy needed for the reaction to proceed.",
+        "fraction": 0,
+        "feedback": "Energy for unfavourable reactions usually comes from ATP or other coupled sources, not the enzyme itself."
+      },
+      {
+        "text": "Shifts the equilibrium toward products.",
+        "fraction": 0,
+        "feedback": "Catalysts speed both forward and reverse reactions equally; they do not move the equilibrium position."
+      },
+      {
+        "text": "Is permanently consumed to drive the reaction forward.",
+        "fraction": 0,
+        "feedback": "An enzyme is recycled after catalysis and is not consumed by the reaction it catalyses."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ma03quad",
+    "name": "Roots of x² − 5x + 6 = 0",
+    "question_type": "multichoice",
+    "question_text": "<p>What are the real solutions of x² − 5x + 6 = 0?</p>",
+    "general_feedback": "<p>Factor: x² − 5x + 6 = (x − 2)(x − 3), so the roots are x = 2 and x = 3. You can verify by expanding or using the quadratic formula with a = 1, b = −5, c = 6.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "math",
+    "tags": [
+      "algebra",
+      "quadratic",
+      "factoring"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — The factored form (x − 2)(x − 3) = 0 gives these roots.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "x = 2 and x = 3",
+        "fraction": 100,
+        "feedback": "The factored form (x − 2)(x − 3) = 0 gives these roots."
+      },
+      {
+        "text": "x = −2 and x = −3",
+        "fraction": 0,
+        "feedback": "Sign error — factoring the correct trinomial yields positive roots 2 and 3."
+      },
+      {
+        "text": "x = 1 and x = 6",
+        "fraction": 0,
+        "feedback": "Those values multiply to 6 but sum to 7, not 5; they don't satisfy the equation."
+      },
+      {
+        "text": "x = 5 and x = 6",
+        "fraction": 0,
+        "feedback": "5 does not satisfy 25 − 25 + 6 = 6 ≠ 0; the correct roots are 2 and 3."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ma05slpe",
+    "name": "Slope of a line through two points",
+    "question_type": "multichoice",
+    "question_text": "<p>What is the slope of the line through the points (1, 2) and (4, 8)?</p>",
+    "general_feedback": "<p>Slope m = (y₂ − y₁) / (x₂ − x₁) = (8 − 2) / (4 − 1) = 6 / 3 = 2.</p>",
+    "difficulty": "easy",
+    "bloom_level": "apply",
+    "topic": "math",
+    "tags": [
+      "algebra",
+      "lines",
+      "slope"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — (8 − 2) / (4 − 1) = 6 / 3 = 2.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "2",
+        "fraction": 100,
+        "feedback": "(8 − 2) / (4 − 1) = 6 / 3 = 2."
+      },
+      {
+        "text": "1/2",
+        "fraction": 0,
+        "feedback": "You inverted the ratio — that is Δx / Δy, not rise / run."
+      },
+      {
+        "text": "6",
+        "fraction": 0,
+        "feedback": "You reported the rise only; slope divides rise by run."
+      },
+      {
+        "text": "3",
+        "fraction": 0,
+        "feedback": "You reported the run only; slope divides rise by run."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ph06splt",
+    "name": "Speed of light in vacuum",
+    "question_type": "multichoice",
+    "question_text": "<p>Which value is closest to the speed of light in vacuum?</p>",
+    "general_feedback": "<p>The speed of light in vacuum is defined as exactly 299 792 458 m/s, usually approximated as 3 × 10⁸ m/s.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "physics",
+    "tags": [
+      "optics",
+      "constants",
+      "relativity"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — This is the standard approximation of c.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "3 × 10⁸ m/s",
+        "fraction": 100,
+        "feedback": "This is the standard approximation of c."
+      },
+      {
+        "text": "3 × 10⁶ m/s",
+        "fraction": 0,
+        "feedback": "Two orders of magnitude too slow."
+      },
+      {
+        "text": "3 × 10¹⁰ m/s",
+        "fraction": 0,
+        "feedback": "Two orders of magnitude too fast."
+      },
+      {
+        "text": "3 × 10⁵ m/s",
+        "fraction": 0,
+        "feedback": "That is closer to the speed of sound in a metal rod, not light in vacuum."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ch07stte",
+    "name": "State of matter — liquid properties",
+    "question_type": "multichoice",
+    "question_text": "<p>Which state of matter has a definite volume but takes the shape of its container?</p>",
+    "general_feedback": "<p>Liquids have a fixed volume because intermolecular forces are strong enough to keep molecules close, but the molecules can flow past each other, so a liquid adopts the shape of its container.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "chemistry",
+    "tags": [
+      "states-of-matter",
+      "physical-chemistry"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Liquids have a fixed volume and flow to fill the container's shape.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Liquid",
+        "fraction": 100,
+        "feedback": "Liquids have a fixed volume and flow to fill the container's shape."
+      },
+      {
+        "text": "Gas",
+        "fraction": 0,
+        "feedback": "A gas has neither fixed volume nor fixed shape — it expands to fill its container."
+      },
+      {
+        "text": "Solid",
+        "fraction": 0,
+        "feedback": "A solid has both fixed volume and fixed shape."
+      },
+      {
+        "text": "Plasma",
+        "fraction": 0,
+        "feedback": "A plasma, like a gas, has no fixed volume or shape."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-bi08brnc",
+    "name": "Structure that links the two cerebral hemispheres",
+    "question_type": "multichoice",
+    "question_text": "<p>Which structure is the large bundle of nerve fibres connecting the left and right cerebral hemispheres of the human brain?</p>",
+    "general_feedback": "<p>The corpus callosum is a thick band of approximately 200 million axons that allows the left and right hemispheres to exchange information.</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "biology",
+    "tags": [
+      "anatomy",
+      "nervous-system",
+      "brain"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — The corpus callosum is the primary inter-hemispheric commissure.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Corpus callosum",
+        "fraction": 100,
+        "feedback": "The corpus callosum is the primary inter-hemispheric commissure."
+      },
+      {
+        "text": "Cerebellum",
+        "fraction": 0,
+        "feedback": "The cerebellum coordinates movement; it sits beneath the cerebrum and is not the link between hemispheres."
+      },
+      {
+        "text": "Medulla oblongata",
+        "fraction": 0,
+        "feedback": "The medulla is part of the brainstem and regulates autonomic functions, not inter-hemispheric communication."
+      },
+      {
+        "text": "Hypothalamus",
+        "fraction": 0,
+        "feedback": "The hypothalamus regulates hormones and homeostasis; it is not the hemisphere-linking structure."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ma07sumn",
+    "name": "Sum of 1 through n",
+    "question_type": "multichoice",
+    "question_text": "<p>Which formula gives the sum of the first n positive integers, 1 + 2 + ... + n?</p>",
+    "general_feedback": "<p>This classical formula is n(n + 1) / 2. For example, with n = 100, the sum is 100 × 101 / 2 = 5050 — the anecdote credited to the young Gauss.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "math",
+    "tags": [
+      "series",
+      "arithmetic",
+      "summation"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — The arithmetic-series formula for 1 + 2 + … + n.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "n(n + 1) / 2",
+        "fraction": 100,
+        "feedback": "The arithmetic-series formula for 1 + 2 + … + n."
+      },
+      {
+        "text": "n² / 2",
+        "fraction": 0,
+        "feedback": "That understates the total — it omits the +n/2 correction from n(n+1)/2."
+      },
+      {
+        "text": "n(n − 1) / 2",
+        "fraction": 0,
+        "feedback": "That is the number of unordered pairs from n items, not the sum 1 + 2 + … + n."
+      },
+      {
+        "text": "2ⁿ",
+        "fraction": 0,
+        "feedback": "That is the number of subsets of an n-element set, not the sum of integers."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-py10glil",
+    "name": "The CPython GIL affects what?",
+    "question_type": "multichoice",
+    "question_text": "<p>In CPython, what does the Global Interpreter Lock (GIL) primarily prevent?</p>",
+    "general_feedback": "<p>The GIL ensures that only one native thread executes Python bytecode at a time, which serialises CPU-bound pure-Python work across threads. I/O-bound threads still benefit from threading because the GIL is released during most I/O waits.</p>",
+    "difficulty": "hard",
+    "bloom_level": "understand",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "concurrency",
+      "gil"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — The GIL serialises bytecode execution across threads in CPython.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "Multiple threads from executing Python bytecode simultaneously.",
+        "fraction": 100,
+        "feedback": "The GIL serialises bytecode execution across threads in CPython."
+      },
+      {
+        "text": "The interpreter from ever being used in multi-core machines.",
+        "fraction": 0,
+        "feedback": "The interpreter runs on multi-core hardware; the GIL affects parallelism within a process, not whether CPython can run."
+      },
+      {
+        "text": "I/O-bound programs from benefiting from threading.",
+        "fraction": 0,
+        "feedback": "I/O releases the GIL, so threading is effective for I/O-bound workloads."
+      },
+      {
+        "text": "Multiprocessing from running Python code in parallel.",
+        "fraction": 0,
+        "feedback": "multiprocessing spawns separate processes with their own GIL, so they run Python bytecode in parallel."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-bi09blod",
+    "name": "Universal red-cell donor blood type",
+    "question_type": "multichoice",
+    "question_text": "<p>Which ABO/Rh blood group is considered the universal donor for packed red blood cells?</p>",
+    "general_feedback": "<p>Type O negative red cells carry neither A nor B surface antigens nor the RhD antigen, so they do not trigger ABO or RhD incompatibility reactions in any recipient.</p>",
+    "difficulty": "medium",
+    "bloom_level": "remember",
+    "topic": "biology",
+    "tags": [
+      "immunology",
+      "blood-groups",
+      "genetics"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — No A, B, or RhD antigens on the red cells — compatible for transfusion into any recipient.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "O negative",
+        "fraction": 100,
+        "feedback": "No A, B, or RhD antigens on the red cells — compatible for transfusion into any recipient."
+      },
+      {
+        "text": "AB positive",
+        "fraction": 0,
+        "feedback": "AB+ is the universal plasma recipient, not a universal red-cell donor."
+      },
+      {
+        "text": "O positive",
+        "fraction": 0,
+        "feedback": "O+ is compatible with Rh-positive recipients but not with Rh-negative ones."
+      },
+      {
+        "text": "AB negative",
+        "fraction": 0,
+        "feedback": "AB negative red cells carry both A and B antigens and are not universally compatible."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-jv02equl",
+    "name": "== vs equals() on Java Strings",
+    "question_type": "multichoice",
+    "question_text": "<p>Consider:</p><pre>String a = new String(\"hi\");\nString b = new String(\"hi\");\nboolean r1 = (a == b);\nboolean r2 = a.equals(b);</pre><p>What are the values of <code>r1</code> and <code>r2</code>?</p>",
+    "general_feedback": "<p><code>==</code> compares object references, not contents. Because the two <code>new String</code> calls create distinct objects, <code>a == b</code> is <code>false</code>. <code>equals</code> on <code>String</code> compares the character sequences, which are equal, so it returns <code>true</code>.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "coding/java",
+    "tags": [
+      "java",
+      "strings",
+      "equality"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — == compares references (different objects), equals compares content (same characters).",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "r1 = false, r2 = true",
+        "fraction": 100,
+        "feedback": "== compares references (different objects), equals compares content (same characters)."
+      },
+      {
+        "text": "r1 = true, r2 = true",
+        "fraction": 0,
+        "feedback": "== is true only when both sides reference the exact same object; new creates distinct objects."
+      },
+      {
+        "text": "r1 = false, r2 = false",
+        "fraction": 0,
+        "feedback": "The character contents match, so equals returns true."
+      },
+      {
+        "text": "r1 = true, r2 = false",
+        "fraction": 0,
+        "feedback": "Both outcomes are reversed; == is false and equals is true here."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
     "idnumber": "mqf-p02wvfrq",
     "name": "Wave speed from frequency and wavelength",
     "question_type": "multichoice",
@@ -569,6 +2867,101 @@
         "text": "0.04 m/s",
         "fraction": 0,
         "feedback": "That is λ / f. The wave equation multiplies them, it does not divide."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-py08enum",
+    "name": "What enumerate() yields",
+    "question_type": "multichoice",
+    "question_text": "<p>Given <code>for i, v in enumerate([\"a\", \"b\"]):</code>, what does each iteration bind?</p>",
+    "general_feedback": "<p><code>enumerate(iterable, start=0)</code> yields pairs (index, value). Here iteration yields (0, 'a') then (1, 'b'). The optional <code>start</code> argument changes the starting index.</p>",
+    "difficulty": "easy",
+    "bloom_level": "remember",
+    "topic": "coding/python",
+    "tags": [
+      "python",
+      "iteration",
+      "builtins"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — enumerate yields (index, value) pairs.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "i is the index, v is the element",
+        "fraction": 100,
+        "feedback": "enumerate yields (index, value) pairs."
+      },
+      {
+        "text": "i and v are both elements",
+        "fraction": 0,
+        "feedback": "enumerate produces an index alongside the element, not two elements."
+      },
+      {
+        "text": "i is the element, v is the index",
+        "fraction": 0,
+        "feedback": "Reversed — the unpacking order is (index, value)."
+      },
+      {
+        "text": "i is always 1 and v cycles",
+        "fraction": 0,
+        "feedback": "i counts up from the start index (default 0), incrementing each iteration."
+      }
+    ],
+    "submitter": "@danielcregg",
+    "submitted_at": "2026-04-15T00:00:00.000Z",
+    "validation_score": 10
+  },
+  {
+    "idnumber": "mqf-ma10mtmx",
+    "name": "When is the product AB defined?",
+    "question_type": "multichoice",
+    "question_text": "<p>If A is an m × n matrix and B is a p × q matrix, the matrix product AB is defined when which condition holds?</p>",
+    "general_feedback": "<p>For AB to be defined, the number of columns of A (n) must equal the number of rows of B (p). The result AB then has shape m × q.</p>",
+    "difficulty": "medium",
+    "bloom_level": "understand",
+    "topic": "math",
+    "tags": [
+      "linear-algebra",
+      "matrices"
+    ],
+    "default_grade": 1,
+    "penalty": 0,
+    "single": true,
+    "shuffle_answers": true,
+    "answer_numbering": "abc",
+    "correct_feedback": "Correct — Columns of A must match rows of B for the dot products to line up.",
+    "partially_correct_feedback": "Your answer is partially correct.",
+    "incorrect_feedback": "Incorrect — review the explanation below.",
+    "answers": [
+      {
+        "text": "n = p",
+        "fraction": 100,
+        "feedback": "Columns of A must match rows of B for the dot products to line up."
+      },
+      {
+        "text": "m = q",
+        "fraction": 0,
+        "feedback": "The outer dimensions (m and q) describe the shape of AB; they need not be equal."
+      },
+      {
+        "text": "m = n",
+        "fraction": 0,
+        "feedback": "A does not need to be square for AB to be defined."
+      },
+      {
+        "text": "p = q",
+        "fraction": 0,
+        "feedback": "B does not need to be square for AB to be defined."
       }
     ],
     "submitter": "@danielcregg",
