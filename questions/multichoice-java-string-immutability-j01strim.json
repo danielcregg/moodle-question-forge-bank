@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-j01strim",
+  "name": "Java String immutability",
+  "question_type": "multichoice",
+  "question_text": "<p>In Java, consider the following snippet:</p><pre>String s = \"hi\";\ns.concat(\" there\");\nSystem.out.println(s);</pre><p>What is printed to the console?</p>",
+  "general_feedback": "<p><code>String</code> objects are immutable in Java — every method that appears to modify a string actually returns a new string. <code>s.concat(\" there\")</code> produces a new <code>String</code> with value <code>\"hi there\"</code>, but the reference <code>s</code> is never reassigned, so it still points at the original <code>\"hi\"</code>.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "coding/java",
+  "tags": ["java", "strings", "immutability"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — strings are immutable, so the concat result is discarded.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — think about what concat returns, and whether s itself is reassigned.",
+  "answers": [
+    { "text": "hi",                         "fraction": 100, "feedback": "Right — concat returns a new String, and s was never reassigned to it." },
+    { "text": "hi there",                   "fraction": 0,   "feedback": "That would require reassigning s, e.g. s = s.concat(\" there\"). The snippet discards the returned String." },
+    { "text": "A compile-time error occurs","fraction": 0,   "feedback": "The snippet is valid Java. String has a concat method that returns String." },
+    { "text": "A NullPointerException",     "fraction": 0,   "feedback": "s is initialised to a non-null literal, so no NullPointerException is thrown." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

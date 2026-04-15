@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-m02pythg",
+  "name": "Pythagorean hypotenuse 3-4-?",
+  "question_type": "multichoice",
+  "question_text": "<p>A right-angled triangle has legs of length 3 and 4. What is the length of its hypotenuse?</p>",
+  "general_feedback": "<p>By the Pythagorean theorem, c² = a² + b² = 3² + 4² = 9 + 16 = 25, so c = √25 = 5. This is the classic 3-4-5 right triangle.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "math",
+  "tags": ["geometry", "pythagoras", "triangles"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — √(9 + 16) = 5.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — apply c² = a² + b² and then take the square root.",
+  "answers": [
+    { "text": "5",    "fraction": 100, "feedback": "Right — √(3² + 4²) = √25 = 5." },
+    { "text": "7",    "fraction": 0,   "feedback": "You added the legs directly. The theorem sums their squares, not the legs themselves." },
+    { "text": "√7",   "fraction": 0,   "feedback": "That would come from a² + b² = 7, but 3² + 4² = 25." },
+    { "text": "12.5", "fraction": 0,   "feedback": "You reported the sum of squares instead of its square root." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

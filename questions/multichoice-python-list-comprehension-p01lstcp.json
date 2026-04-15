@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-p01lstcp",
+  "name": "Python list comprehension output",
+  "question_type": "multichoice",
+  "question_text": "<p>What is the value of <code>result</code> after running the following Python code?</p><pre>result = [x * x for x in range(5) if x % 2 == 0]</pre>",
+  "general_feedback": "<p>The comprehension iterates over <code>range(5)</code>, which yields 0, 1, 2, 3, 4. The filter <code>if x % 2 == 0</code> keeps only 0, 2, and 4. Each kept value is squared, giving <code>[0, 4, 16]</code>.</p>",
+  "difficulty": "medium",
+  "bloom_level": "apply",
+  "topic": "coding/python",
+  "tags": ["python", "list-comprehension", "iteration"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — only even values from range(5) are kept and then squared.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — step through range(5), apply the even filter, then square each remaining value.",
+  "answers": [
+    { "text": "[0, 4, 16]",        "fraction": 100, "feedback": "Right — 0², 2², and 4² are the squares of the even values 0, 2, 4." },
+    { "text": "[0, 1, 4, 9, 16]",  "fraction": 0,   "feedback": "That ignores the filter — it is the result without the if clause." },
+    { "text": "[4, 16]",           "fraction": 0,   "feedback": "You excluded 0, but 0 is even (0 % 2 == 0), so it stays in." },
+    { "text": "[0, 2, 4]",         "fraction": 0,   "feedback": "Those are the filtered values before squaring. The comprehension squares each kept value." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

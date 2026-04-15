@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-p02wvfrq",
+  "name": "Wave speed from frequency and wavelength",
+  "question_type": "multichoice",
+  "question_text": "<p>A transverse wave on a string has a frequency of 50 Hz and a wavelength of 2 m. What is its wave speed?</p>",
+  "general_feedback": "<p>Wave speed is <em>v = f · λ</em>. Multiplying frequency by wavelength gives 50 × 2 = 100 m/s.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "physics",
+  "tags": ["waves", "frequency", "wavelength"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — v = f · λ.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — the wave equation is v = f · λ.",
+  "answers": [
+    { "text": "100 m/s", "fraction": 100, "feedback": "Right — 50 Hz × 2 m = 100 m/s." },
+    { "text": "25 m/s",  "fraction": 0,   "feedback": "You divided frequency by wavelength. The correct relation is v = f · λ." },
+    { "text": "52 m/s",  "fraction": 0,   "feedback": "You added the numbers. Wave speed is the product of frequency and wavelength." },
+    { "text": "0.04 m/s","fraction": 0,   "feedback": "That is λ / f. The wave equation multiplies them, it does not divide." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

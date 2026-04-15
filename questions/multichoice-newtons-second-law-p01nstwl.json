@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-p01nstwl",
+  "name": "Newton's second law — net force",
+  "question_type": "multichoice",
+  "question_text": "<p>A 2 kg block on a frictionless surface is pushed with a constant net force. It accelerates at 3 m/s². What is the magnitude of the net force acting on it?</p>",
+  "general_feedback": "<p>Newton's second law states <em>F = m · a</em>. With <em>m</em> = 2 kg and <em>a</em> = 3 m/s², the net force is 2 × 3 = 6 N.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "physics",
+  "tags": ["mechanics", "newton", "forces"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — F = ma.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — recall F = m × a for a single constant net force.",
+  "answers": [
+    { "text": "6 N",   "fraction": 100, "feedback": "Right — F = m · a = 2 × 3 = 6 N." },
+    { "text": "1.5 N", "fraction": 0,   "feedback": "You divided instead of multiplying. F = m · a, not a / m." },
+    { "text": "5 N",   "fraction": 0,   "feedback": "You added the values. Newton's second law multiplies mass by acceleration." },
+    { "text": "0.67 N","fraction": 0,   "feedback": "That is m / a. The correct formula is F = m · a." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

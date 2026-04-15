@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-c02phscl",
+  "name": "pH of a neutral solution",
+  "question_type": "multichoice",
+  "question_text": "<p>At 25 °C, what is the pH of a neutral aqueous solution?</p>",
+  "general_feedback": "<p>In pure water at 25 °C, [H⁺] = [OH⁻] = 10⁻⁷ M, which gives pH = −log₁₀(10⁻⁷) = 7. Values below 7 are acidic; above 7 are basic.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "chemistry",
+  "tags": ["acids-bases", "ph", "equilibrium"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — neutral water at 25 °C has pH 7.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — recall what [H⁺] equals when a solution is neutral.",
+  "answers": [
+    { "text": "pH 7",  "fraction": 100, "feedback": "Right — [H⁺] = [OH⁻] = 10⁻⁷ M, so pH is exactly 7 at 25 °C." },
+    { "text": "pH 0",  "fraction": 0,   "feedback": "pH 0 corresponds to [H⁺] = 1 M, a strongly acidic solution." },
+    { "text": "pH 10", "fraction": 0,   "feedback": "pH 10 is basic — [OH⁻] exceeds [H⁺] by a factor of 1000." },
+    { "text": "pH 14", "fraction": 0,   "feedback": "pH 14 is strongly basic, approximately 1 M OH⁻." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

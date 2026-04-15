@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-b01mtchn",
+  "name": "Organelle that produces most ATP",
+  "question_type": "multichoice",
+  "question_text": "<p>Which eukaryotic organelle is responsible for producing most of the cell's ATP through aerobic respiration?</p>",
+  "general_feedback": "<p>The mitochondrion is where pyruvate oxidation, the citric acid cycle, and oxidative phosphorylation take place, yielding the majority of ATP in aerobic eukaryotic cells.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "biology",
+  "tags": ["cell-biology", "organelles", "respiration"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — the mitochondrion drives aerobic ATP production.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — think about where the citric acid cycle and oxidative phosphorylation take place.",
+  "answers": [
+    { "text": "Mitochondrion",        "fraction": 100, "feedback": "Right — it hosts the citric acid cycle and the electron transport chain." },
+    { "text": "Chloroplast",          "fraction": 0,   "feedback": "Chloroplasts generate ATP during photosynthesis, and they are present only in plant and algal cells." },
+    { "text": "Ribosome",             "fraction": 0,   "feedback": "Ribosomes synthesise proteins; they consume ATP rather than produce it." },
+    { "text": "Golgi apparatus",      "fraction": 0,   "feedback": "The Golgi sorts and modifies proteins for secretion; it does not carry out respiration." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

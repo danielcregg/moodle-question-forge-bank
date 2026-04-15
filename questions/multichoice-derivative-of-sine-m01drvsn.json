@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-m01drvsn",
+  "name": "Derivative of sin(x)",
+  "question_type": "multichoice",
+  "question_text": "<p>What is the derivative of f(x) = sin(x) with respect to x?</p>",
+  "general_feedback": "<p>The derivative of sine is cosine: d/dx [sin(x)] = cos(x). This follows from the small-angle approximation sin(h) ≈ h and the angle-addition identity applied in the limit definition of the derivative.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "math",
+  "tags": ["calculus", "derivatives", "trigonometry"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — d/dx [sin(x)] = cos(x).",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — recall the standard derivatives of the trigonometric functions.",
+  "answers": [
+    { "text": "cos(x)",  "fraction": 100, "feedback": "Right — sine differentiates to cosine." },
+    { "text": "−cos(x)", "fraction": 0,   "feedback": "That is the derivative of cos(x), not sin(x)." },
+    { "text": "−sin(x)", "fraction": 0,   "feedback": "That is the second derivative of sin(x), not the first." },
+    { "text": "tan(x)",  "fraction": 0,   "feedback": "tan(x) is sin(x) / cos(x); it is not the derivative of sin(x)." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

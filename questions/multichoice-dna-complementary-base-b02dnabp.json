@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-b02dnabp",
+  "name": "DNA complementary base for adenine",
+  "question_type": "multichoice",
+  "question_text": "<p>In double-stranded DNA, which base pairs with adenine on the opposite strand?</p>",
+  "general_feedback": "<p>Watson–Crick base pairing: adenine (A) pairs with thymine (T) via two hydrogen bonds; guanine (G) pairs with cytosine (C) via three hydrogen bonds. In RNA, uracil replaces thymine.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "biology",
+  "tags": ["genetics", "dna", "base-pairing"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — A pairs with T in DNA.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — remember the Watson–Crick pairing rules for DNA.",
+  "answers": [
+    { "text": "Thymine",  "fraction": 100, "feedback": "Right — A–T pair via two hydrogen bonds in DNA." },
+    { "text": "Uracil",   "fraction": 0,   "feedback": "Uracil replaces thymine in RNA, not in DNA." },
+    { "text": "Guanine",  "fraction": 0,   "feedback": "Guanine pairs with cytosine, not with adenine." },
+    { "text": "Cytosine", "fraction": 0,   "feedback": "Cytosine pairs with guanine in the other Watson–Crick pair." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

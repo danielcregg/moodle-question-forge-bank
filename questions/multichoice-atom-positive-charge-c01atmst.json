@@ -1,0 +1,28 @@
+{
+  "idnumber": "mqf-c01atmst",
+  "name": "Location of positive charge in an atom",
+  "question_type": "multichoice",
+  "question_text": "<p>Which subatomic particle carries the positive charge of an atom, and where is it located?</p>",
+  "general_feedback": "<p>Protons carry a +1 elementary charge and are bound inside the nucleus along with neutrons. Electrons are negatively charged and orbit the nucleus; neutrons are electrically neutral.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "chemistry",
+  "tags": ["atomic-structure", "particles", "nucleus"],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — protons sit in the nucleus and carry the atom's positive charge.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — recall which particle is positive and where it is found.",
+  "answers": [
+    { "text": "Protons, located in the nucleus",       "fraction": 100, "feedback": "Right — protons are positive and bound in the nucleus." },
+    { "text": "Electrons, located in the nucleus",     "fraction": 0,   "feedback": "Electrons are negatively charged, and they orbit the nucleus rather than sit inside it." },
+    { "text": "Neutrons, orbiting the nucleus",        "fraction": 0,   "feedback": "Neutrons have no net charge and reside in the nucleus, not in orbit." },
+    { "text": "Electrons, orbiting the nucleus",       "fraction": 0,   "feedback": "Electrons do orbit the nucleus, but they carry negative charge, not positive." }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}
