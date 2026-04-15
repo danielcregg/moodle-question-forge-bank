@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ch03bal2",
+  "name": "Balancing H2 + O2 → H2O",
+  "question_type": "multichoice",
+  "question_text": "<p>What are the correct coefficients when the equation H₂ + O₂ → H₂O is balanced using the smallest whole-number ratio?</p>",
+  "general_feedback": "<p>The balanced equation is 2 H₂ + O₂ → 2 H₂O. Two molecules of H₂ provide 4 hydrogen atoms, one molecule of O₂ provides 2 oxygen atoms, and those react to form 2 molecules of H₂O (4 H, 2 O).</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "chemistry",
+  "tags": [
+    "stoichiometry",
+    "balancing",
+    "equations"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Hydrogens: 4 on each side; oxygens: 2 on each side.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "2 H₂ + O₂ → 2 H₂O",
+      "fraction": 100,
+      "feedback": "Hydrogens: 4 on each side; oxygens: 2 on each side."
+    },
+    {
+      "text": "H₂ + O₂ → H₂O",
+      "fraction": 0,
+      "feedback": "That leaves one extra oxygen atom on the left — the equation is not balanced."
+    },
+    {
+      "text": "H₂ + O₂ → 2 H₂O",
+      "fraction": 0,
+      "feedback": "Hydrogens do not balance: 2 on the left, 4 on the right."
+    },
+    {
+      "text": "2 H₂ + 2 O₂ → 2 H₂O",
+      "fraction": 0,
+      "feedback": "Oxygens do not balance: 4 on the left, 2 on the right."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

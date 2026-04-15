@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ph10dppr",
+  "name": "Doppler effect — approaching source",
+  "question_type": "multichoice",
+  "question_text": "<p>You are standing still and an ambulance siren moves toward you at constant speed. Compared with the sound emitted by the siren, what do you hear?</p>",
+  "general_feedback": "<p>When a source moves toward a stationary observer, successive wave fronts are emitted from closer positions, shortening the observed wavelength and raising the observed frequency (higher pitch). After the source passes, the pitch drops.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "physics",
+  "tags": [
+    "waves",
+    "doppler",
+    "sound"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Approaching source → compressed wavefronts → higher observed frequency.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "A higher pitch than the emitted sound.",
+      "fraction": 100,
+      "feedback": "Approaching source → compressed wavefronts → higher observed frequency."
+    },
+    {
+      "text": "A lower pitch than the emitted sound.",
+      "fraction": 0,
+      "feedback": "That applies to a receding source, not an approaching one."
+    },
+    {
+      "text": "The same pitch, but louder.",
+      "fraction": 0,
+      "feedback": "Loudness may change with distance but the perceived frequency also shifts; pitch is not unchanged."
+    },
+    {
+      "text": "No sound until the ambulance reaches you.",
+      "fraction": 0,
+      "feedback": "Sound propagates through the air continuously; the observer hears the siren throughout its approach."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

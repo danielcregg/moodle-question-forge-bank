@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv03intg",
+  "name": "Autoboxing Integer cache in Java",
+  "question_type": "multichoice",
+  "question_text": "<p>Consider:</p><pre>Integer a = 127;\nInteger b = 127;\nInteger c = 200;\nInteger d = 200;\nSystem.out.println((a == b) + \" \" + (c == d));</pre><p>What does this print on a typical JVM with default settings?</p>",
+  "general_feedback": "<p>Autoboxing goes through <code>Integer.valueOf</code>, which caches boxed Integers in the range −128 to 127. Values inside the cache share the same Integer instance, so <code>a == b</code> is <code>true</code>. 200 is outside the cache, so <code>c</code> and <code>d</code> are distinct objects and <code>c == d</code> is <code>false</code>.</p>",
+  "difficulty": "hard",
+  "bloom_level": "understand",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "wrappers",
+    "autoboxing"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — 127 is inside the Integer cache (−128..127); 200 is outside, so distinct Integer objects are boxed.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "true false",
+      "fraction": 100,
+      "feedback": "127 is inside the Integer cache (−128..127); 200 is outside, so distinct Integer objects are boxed."
+    },
+    {
+      "text": "true true",
+      "fraction": 0,
+      "feedback": "200 is not cached, so boxing twice creates two different Integer instances."
+    },
+    {
+      "text": "false false",
+      "fraction": 0,
+      "feedback": "127 is inside the default Integer cache, so boxing both times returns the same instance."
+    },
+    {
+      "text": "false true",
+      "fraction": 0,
+      "feedback": "Both outcomes are reversed from what the cache semantics produce."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

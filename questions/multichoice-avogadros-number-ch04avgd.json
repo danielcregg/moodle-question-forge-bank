@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ch04avgd",
+  "name": "Avogadro's number",
+  "question_type": "multichoice",
+  "question_text": "<p>One mole of any pure substance contains approximately how many elementary entities (atoms, molecules, or formula units)?</p>",
+  "general_feedback": "<p>One mole is defined as 6.022 × 10²³ entities (Avogadro's number). This definition links the microscopic scale of atoms/molecules to macroscopic amounts measured in grams.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "chemistry",
+  "tags": [
+    "moles",
+    "constants",
+    "stoichiometry"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — This is Avogadro's number, the number of entities in one mole.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "6.022 × 10²³",
+      "fraction": 100,
+      "feedback": "This is Avogadro's number, the number of entities in one mole."
+    },
+    {
+      "text": "6.022 × 10⁻²³",
+      "fraction": 0,
+      "feedback": "The exponent is negative — far too few particles. Avogadro's number is positive."
+    },
+    {
+      "text": "1.602 × 10⁻¹⁹",
+      "fraction": 0,
+      "feedback": "That is the elementary charge in coulombs, not Avogadro's number."
+    },
+    {
+      "text": "9.81 × 10²³",
+      "fraction": 0,
+      "feedback": "The mantissa is wrong — Avogadro's number starts with 6.022, not 9.81."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

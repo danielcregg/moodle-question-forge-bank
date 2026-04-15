@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ch06ionc",
+  "name": "Bond type in NaCl",
+  "question_type": "multichoice",
+  "question_text": "<p>Sodium chloride (NaCl) is held together by which primary bond type?</p>",
+  "general_feedback": "<p>Sodium (a metal) transfers its outer electron to chlorine (a non-metal), producing Na⁺ and Cl⁻ ions. Electrostatic attraction between oppositely charged ions is an ionic bond.</p>",
+  "difficulty": "easy",
+  "bloom_level": "understand",
+  "topic": "chemistry",
+  "tags": [
+    "bonding",
+    "ionic",
+    "covalent"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Electron transfer produces Na⁺ and Cl⁻; the electrostatic attraction is an ionic bond.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Ionic bonding",
+      "fraction": 100,
+      "feedback": "Electron transfer produces Na⁺ and Cl⁻; the electrostatic attraction is an ionic bond."
+    },
+    {
+      "text": "Covalent bonding",
+      "fraction": 0,
+      "feedback": "Covalent bonds share electron pairs between atoms; Na and Cl instead transfer an electron."
+    },
+    {
+      "text": "Metallic bonding",
+      "fraction": 0,
+      "feedback": "Metallic bonding occurs between metal atoms sharing delocalised electrons — NaCl contains a non-metal."
+    },
+    {
+      "text": "Hydrogen bonding",
+      "fraction": 0,
+      "feedback": "Hydrogen bonds are weak intermolecular forces involving H bonded to N, O, or F — not present in NaCl."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

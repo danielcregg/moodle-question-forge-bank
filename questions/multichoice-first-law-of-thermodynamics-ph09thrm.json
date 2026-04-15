@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-ph09thrm",
+  "name": "First law of thermodynamics",
+  "question_type": "multichoice",
+  "question_text": "<p>Which statement best expresses the first law of thermodynamics?</p>",
+  "general_feedback": "<p>The first law is the thermodynamic statement of energy conservation: the change in internal energy of a system equals the heat added to the system minus the work done by the system (ΔU = Q − W). Energy is neither created nor destroyed; it changes form.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "physics",
+  "tags": [
+    "thermodynamics",
+    "energy"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — This is exactly the first law — the thermodynamic statement of energy conservation.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Energy is conserved; it changes form but is not created or destroyed.",
+      "fraction": 100,
+      "feedback": "This is exactly the first law — the thermodynamic statement of energy conservation."
+    },
+    {
+      "text": "Heat always flows spontaneously from cold to hot.",
+      "fraction": 0,
+      "feedback": "That contradicts the second law, which says heat flows from hot to cold without external work."
+    },
+    {
+      "text": "Entropy of an isolated system always decreases.",
+      "fraction": 0,
+      "feedback": "The second law states entropy of an isolated system never decreases, not the first law."
+    },
+    {
+      "text": "No heat engine can convert heat entirely into work in a single cycle.",
+      "fraction": 0,
+      "feedback": "That is the Kelvin statement of the second law, not the first."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

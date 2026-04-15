@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ma07sumn",
+  "name": "Sum of 1 through n",
+  "question_type": "multichoice",
+  "question_text": "<p>Which formula gives the sum of the first n positive integers, 1 + 2 + ... + n?</p>",
+  "general_feedback": "<p>This classical formula is n(n + 1) / 2. For example, with n = 100, the sum is 100 × 101 / 2 = 5050 — the anecdote credited to the young Gauss.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "math",
+  "tags": [
+    "series",
+    "arithmetic",
+    "summation"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — The arithmetic-series formula for 1 + 2 + … + n.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "n(n + 1) / 2",
+      "fraction": 100,
+      "feedback": "The arithmetic-series formula for 1 + 2 + … + n."
+    },
+    {
+      "text": "n² / 2",
+      "fraction": 0,
+      "feedback": "That understates the total — it omits the +n/2 correction from n(n+1)/2."
+    },
+    {
+      "text": "n(n − 1) / 2",
+      "fraction": 0,
+      "feedback": "That is the number of unordered pairs from n items, not the sum 1 + 2 + … + n."
+    },
+    {
+      "text": "2ⁿ",
+      "fraction": 0,
+      "feedback": "That is the number of subsets of an n-element set, not the sum of integers."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

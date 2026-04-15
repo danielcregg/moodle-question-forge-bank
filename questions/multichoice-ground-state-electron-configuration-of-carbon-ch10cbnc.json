@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-ch10cbnc",
+  "name": "Ground-state electron configuration of carbon",
+  "question_type": "multichoice",
+  "question_text": "<p>Carbon has atomic number 6. Which is its correct ground-state electron configuration?</p>",
+  "general_feedback": "<p>Carbon's six electrons fill lowest-energy orbitals first: 1s² (2 electrons), 2s² (2 electrons), and 2p² (2 electrons), giving 1s² 2s² 2p².</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "chemistry",
+  "tags": [
+    "electron-configuration",
+    "atomic-structure"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Follows the Aufbau order for Z = 6.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "1s² 2s² 2p²",
+      "fraction": 100,
+      "feedback": "Follows the Aufbau order for Z = 6."
+    },
+    {
+      "text": "1s² 2s² 2p⁶",
+      "fraction": 0,
+      "feedback": "That is neon (Z = 10), not carbon."
+    },
+    {
+      "text": "1s² 2s¹ 2p³",
+      "fraction": 0,
+      "feedback": "That would total six electrons but skips full 2s occupancy; the ground state fills 2s before 2p."
+    },
+    {
+      "text": "1s² 2p⁴",
+      "fraction": 0,
+      "feedback": "That skips the 2s subshell entirely, which is lower energy than 2p."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

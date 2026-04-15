@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-bi09blod",
+  "name": "Universal red-cell donor blood type",
+  "question_type": "multichoice",
+  "question_text": "<p>Which ABO/Rh blood group is considered the universal donor for packed red blood cells?</p>",
+  "general_feedback": "<p>Type O negative red cells carry neither A nor B surface antigens nor the RhD antigen, so they do not trigger ABO or RhD incompatibility reactions in any recipient.</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "biology",
+  "tags": [
+    "immunology",
+    "blood-groups",
+    "genetics"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — No A, B, or RhD antigens on the red cells — compatible for transfusion into any recipient.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "O negative",
+      "fraction": 100,
+      "feedback": "No A, B, or RhD antigens on the red cells — compatible for transfusion into any recipient."
+    },
+    {
+      "text": "AB positive",
+      "fraction": 0,
+      "feedback": "AB+ is the universal plasma recipient, not a universal red-cell donor."
+    },
+    {
+      "text": "O positive",
+      "fraction": 0,
+      "feedback": "O+ is compatible with Rh-positive recipients but not with Rh-negative ones."
+    },
+    {
+      "text": "AB negative",
+      "fraction": 0,
+      "feedback": "AB negative red cells carry both A and B antigens and are not universally compatible."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

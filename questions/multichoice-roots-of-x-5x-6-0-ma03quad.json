@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ma03quad",
+  "name": "Roots of x² − 5x + 6 = 0",
+  "question_type": "multichoice",
+  "question_text": "<p>What are the real solutions of x² − 5x + 6 = 0?</p>",
+  "general_feedback": "<p>Factor: x² − 5x + 6 = (x − 2)(x − 3), so the roots are x = 2 and x = 3. You can verify by expanding or using the quadratic formula with a = 1, b = −5, c = 6.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "math",
+  "tags": [
+    "algebra",
+    "quadratic",
+    "factoring"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — The factored form (x − 2)(x − 3) = 0 gives these roots.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "x = 2 and x = 3",
+      "fraction": 100,
+      "feedback": "The factored form (x − 2)(x − 3) = 0 gives these roots."
+    },
+    {
+      "text": "x = −2 and x = −3",
+      "fraction": 0,
+      "feedback": "Sign error — factoring the correct trinomial yields positive roots 2 and 3."
+    },
+    {
+      "text": "x = 1 and x = 6",
+      "fraction": 0,
+      "feedback": "Those values multiply to 6 but sum to 7, not 5; they don't satisfy the equation."
+    },
+    {
+      "text": "x = 5 and x = 6",
+      "fraction": 0,
+      "feedback": "5 does not satisfy 25 − 25 + 6 = 6 ≠ 0; the correct roots are 2 and 3."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

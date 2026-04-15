@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ma09logp",
+  "name": "Logarithm product rule",
+  "question_type": "multichoice",
+  "question_text": "<p>For positive real numbers a and b with a common base, which identity is correct?</p>",
+  "general_feedback": "<p>Logarithm rules: log(ab) = log a + log b; log(a/b) = log a − log b; log(aⁿ) = n · log a. Products turn into sums under the log.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "math",
+  "tags": [
+    "logarithms",
+    "algebra",
+    "identities"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Products become sums under the logarithm.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "log(ab) = log a + log b",
+      "fraction": 100,
+      "feedback": "Products become sums under the logarithm."
+    },
+    {
+      "text": "log(a + b) = log a + log b",
+      "fraction": 0,
+      "feedback": "Logs do not distribute over addition — only over multiplication."
+    },
+    {
+      "text": "log(ab) = log a · log b",
+      "fraction": 0,
+      "feedback": "Multiplying logs is not the same as the log of a product."
+    },
+    {
+      "text": "log(a/b) = log a + log b",
+      "fraction": 0,
+      "feedback": "Division gives a difference of logs (log a − log b), not a sum."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

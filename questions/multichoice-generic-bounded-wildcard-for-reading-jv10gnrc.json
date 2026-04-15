@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv10gnrc",
+  "name": "Generic bounded wildcard for reading",
+  "question_type": "multichoice",
+  "question_text": "<p>You want to write a method that reads elements from a list of Number or any subtype (Integer, Double, etc.). Which parameter type best expresses this?</p>",
+  "general_feedback": "<p>The PECS rule (Producer Extends, Consumer Super) says use <code>? extends T</code> when reading from a collection (it produces Ts). <code>List&lt;? extends Number&gt;</code> lets the method accept <code>List&lt;Integer&gt;</code>, <code>List&lt;Double&gt;</code>, etc. but forbids adding non-null elements.</p>",
+  "difficulty": "hard",
+  "bloom_level": "understand",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "generics",
+    "wildcards"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Producer Extends — accept any List of Number or subtype for reading.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "List<? extends Number>",
+      "fraction": 100,
+      "feedback": "Producer Extends — accept any List of Number or subtype for reading."
+    },
+    {
+      "text": "List<Number>",
+      "fraction": 0,
+      "feedback": "Invariance — List<Number> does NOT accept List<Integer>."
+    },
+    {
+      "text": "List<? super Number>",
+      "fraction": 0,
+      "feedback": "? super is for consuming (writing), not reading a Number subtype."
+    },
+    {
+      "text": "List<?>",
+      "fraction": 0,
+      "feedback": "Too loose — you couldn't even guarantee elements are Numbers."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

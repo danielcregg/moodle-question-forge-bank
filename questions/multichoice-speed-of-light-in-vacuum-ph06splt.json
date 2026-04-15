@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ph06splt",
+  "name": "Speed of light in vacuum",
+  "question_type": "multichoice",
+  "question_text": "<p>Which value is closest to the speed of light in vacuum?</p>",
+  "general_feedback": "<p>The speed of light in vacuum is defined as exactly 299 792 458 m/s, usually approximated as 3 × 10⁸ m/s.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "physics",
+  "tags": [
+    "optics",
+    "constants",
+    "relativity"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — This is the standard approximation of c.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "3 × 10⁸ m/s",
+      "fraction": 100,
+      "feedback": "This is the standard approximation of c."
+    },
+    {
+      "text": "3 × 10⁶ m/s",
+      "fraction": 0,
+      "feedback": "Two orders of magnitude too slow."
+    },
+    {
+      "text": "3 × 10¹⁰ m/s",
+      "fraction": 0,
+      "feedback": "Two orders of magnitude too fast."
+    },
+    {
+      "text": "3 × 10⁵ m/s",
+      "fraction": 0,
+      "feedback": "That is closer to the speed of sound in a metal rod, not light in vacuum."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

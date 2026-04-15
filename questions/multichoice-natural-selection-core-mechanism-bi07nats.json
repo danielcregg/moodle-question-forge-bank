@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-bi07nats",
+  "name": "Natural selection core mechanism",
+  "question_type": "multichoice",
+  "question_text": "<p>Which of these best describes the mechanism of natural selection as proposed by Darwin and Wallace?</p>",
+  "general_feedback": "<p>Natural selection requires heritable variation in a trait, a difference in survival or reproductive success linked to that variation, and transmission of the advantageous variants to the next generation. Over many generations allele frequencies shift.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "biology",
+  "tags": [
+    "evolution",
+    "natural-selection",
+    "darwin"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Variation + differential fitness + heredity drives natural selection.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Heritable variants that improve survival or reproduction become more common over generations.",
+      "fraction": 100,
+      "feedback": "Variation + differential fitness + heredity drives natural selection."
+    },
+    {
+      "text": "Organisms consciously change their bodies to better fit their environment.",
+      "fraction": 0,
+      "feedback": "That is Lamarckism (inheritance of acquired characteristics), which is not how natural selection works."
+    },
+    {
+      "text": "All species steadily progress toward a predetermined goal of perfection.",
+      "fraction": 0,
+      "feedback": "Evolution has no fixed target; it is a response to current selective pressures."
+    },
+    {
+      "text": "Random mutations are always beneficial and quickly spread through a population.",
+      "fraction": 0,
+      "feedback": "Most mutations are neutral or harmful; only those that increase fitness in the current environment tend to spread."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

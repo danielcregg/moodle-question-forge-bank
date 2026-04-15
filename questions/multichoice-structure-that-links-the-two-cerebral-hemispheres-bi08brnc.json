@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-bi08brnc",
+  "name": "Structure that links the two cerebral hemispheres",
+  "question_type": "multichoice",
+  "question_text": "<p>Which structure is the large bundle of nerve fibres connecting the left and right cerebral hemispheres of the human brain?</p>",
+  "general_feedback": "<p>The corpus callosum is a thick band of approximately 200 million axons that allows the left and right hemispheres to exchange information.</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "biology",
+  "tags": [
+    "anatomy",
+    "nervous-system",
+    "brain"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — The corpus callosum is the primary inter-hemispheric commissure.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Corpus callosum",
+      "fraction": 100,
+      "feedback": "The corpus callosum is the primary inter-hemispheric commissure."
+    },
+    {
+      "text": "Cerebellum",
+      "fraction": 0,
+      "feedback": "The cerebellum coordinates movement; it sits beneath the cerebrum and is not the link between hemispheres."
+    },
+    {
+      "text": "Medulla oblongata",
+      "fraction": 0,
+      "feedback": "The medulla is part of the brainstem and regulates autonomic functions, not inter-hemispheric communication."
+    },
+    {
+      "text": "Hypothalamus",
+      "fraction": 0,
+      "feedback": "The hypothalamus regulates hormones and homeostasis; it is not the hemisphere-linking structure."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ph08cntr",
+  "name": "Direction of centripetal force",
+  "question_type": "multichoice",
+  "question_text": "<p>An object moves in a circle at constant speed. In what direction does the net force on the object point?</p>",
+  "general_feedback": "<p>Uniform circular motion requires an acceleration directed toward the centre of the circle (centripetal acceleration). By Newton's second law the net force is in that same direction — toward the centre.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "physics",
+  "tags": [
+    "mechanics",
+    "circular-motion",
+    "forces"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Centripetal means 'centre-seeking' — the net force is radially inward.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Toward the centre of the circle",
+      "fraction": 100,
+      "feedback": "Centripetal means 'centre-seeking' — the net force is radially inward."
+    },
+    {
+      "text": "Away from the centre of the circle",
+      "fraction": 0,
+      "feedback": "An outward force would push the object away; circular motion requires a centre-directed net force."
+    },
+    {
+      "text": "In the direction of motion",
+      "fraction": 0,
+      "feedback": "A force along the velocity would speed the object up; at constant speed the net force must be perpendicular to the velocity."
+    },
+    {
+      "text": "Opposite to the direction of motion",
+      "fraction": 0,
+      "feedback": "That would slow the object; at constant speed the net force is perpendicular to the velocity, not anti-parallel to it."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

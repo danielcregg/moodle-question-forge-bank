@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ph05ohms",
+  "name": "Ohm's law — current in a resistor",
+  "question_type": "multichoice",
+  "question_text": "<p>A 12 V battery is connected across a 4 Ω resistor. What current flows through the resistor?</p>",
+  "general_feedback": "<p>Ohm's law gives <em>I</em> = V / R = 12 / 4 = 3 A.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "physics",
+  "tags": [
+    "electricity",
+    "ohms-law",
+    "resistors"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — 12 V / 4 Ω = 3 A.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "3 A",
+      "fraction": 100,
+      "feedback": "12 V / 4 Ω = 3 A."
+    },
+    {
+      "text": "48 A",
+      "fraction": 0,
+      "feedback": "You multiplied V × R. Ohm's law divides V by R."
+    },
+    {
+      "text": "0.33 A",
+      "fraction": 0,
+      "feedback": "You inverted the ratio. Current is voltage divided by resistance, not resistance divided by voltage."
+    },
+    {
+      "text": "8 A",
+      "fraction": 0,
+      "feedback": "You subtracted R from V. Ohm's law is a ratio, not a difference."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

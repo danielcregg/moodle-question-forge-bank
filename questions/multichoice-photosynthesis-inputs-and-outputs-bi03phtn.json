@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-bi03phtn",
+  "name": "Photosynthesis inputs and outputs",
+  "question_type": "multichoice",
+  "question_text": "<p>Which statement correctly summarises the overall inputs and outputs of photosynthesis in plants?</p>",
+  "general_feedback": "<p>Photosynthesis takes carbon dioxide and water and, using light energy, produces glucose (a sugar) and molecular oxygen: 6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂.</p>",
+  "difficulty": "easy",
+  "bloom_level": "understand",
+  "topic": "biology",
+  "tags": [
+    "photosynthesis",
+    "plants",
+    "metabolism"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — This is the summary equation of photosynthesis.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "CO₂ + H₂O → glucose + O₂ (with light energy)",
+      "fraction": 100,
+      "feedback": "This is the summary equation of photosynthesis."
+    },
+    {
+      "text": "Glucose + O₂ → CO₂ + H₂O (with ATP)",
+      "fraction": 0,
+      "feedback": "That is cellular respiration, which breaks glucose down rather than building it."
+    },
+    {
+      "text": "CO₂ + O₂ → glucose + H₂O",
+      "fraction": 0,
+      "feedback": "Photosynthesis consumes water, not oxygen; oxygen is a product."
+    },
+    {
+      "text": "H₂O + sunlight → CO₂ + O₂",
+      "fraction": 0,
+      "feedback": "This omits glucose and has water, not CO₂, consumed — not the correct summary."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

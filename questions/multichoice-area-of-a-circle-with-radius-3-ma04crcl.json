@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ma04crcl",
+  "name": "Area of a circle with radius 3",
+  "question_type": "multichoice",
+  "question_text": "<p>What is the area of a circle of radius 3?</p>",
+  "general_feedback": "<p>Area of a circle is A = πr². With r = 3, A = π × 3² = 9π ≈ 28.27.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "math",
+  "tags": [
+    "geometry",
+    "circles",
+    "area"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — A = π r² = π × 9 = 9π.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "9π",
+      "fraction": 100,
+      "feedback": "A = π r² = π × 9 = 9π."
+    },
+    {
+      "text": "6π",
+      "fraction": 0,
+      "feedback": "That is the circumference 2πr = 6π, not the area."
+    },
+    {
+      "text": "3π",
+      "fraction": 0,
+      "feedback": "That would be πr, which has no standard geometric meaning here."
+    },
+    {
+      "text": "27π",
+      "fraction": 0,
+      "feedback": "27 is 3³; area uses r², not r³."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

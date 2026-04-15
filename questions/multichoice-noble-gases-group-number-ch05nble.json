@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ch05nble",
+  "name": "Noble gases — group number",
+  "question_type": "multichoice",
+  "question_text": "<p>Which group of the modern periodic table contains the noble gases (helium, neon, argon, etc.)?</p>",
+  "general_feedback": "<p>Noble gases occupy group 18, the right-most column of the periodic table. Their full outer electron shells make them chemically unreactive under most conditions.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "chemistry",
+  "tags": [
+    "periodic-table",
+    "elements",
+    "group"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Group 18 (the final column) houses He, Ne, Ar, Kr, Xe, and Rn.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Group 18",
+      "fraction": 100,
+      "feedback": "Group 18 (the final column) houses He, Ne, Ar, Kr, Xe, and Rn."
+    },
+    {
+      "text": "Group 1",
+      "fraction": 0,
+      "feedback": "Group 1 contains the alkali metals — very reactive, the opposite of noble gases."
+    },
+    {
+      "text": "Group 17",
+      "fraction": 0,
+      "feedback": "Group 17 is the halogens; noble gases are one column further right."
+    },
+    {
+      "text": "Group 14",
+      "fraction": 0,
+      "feedback": "Group 14 contains C, Si, Ge, Sn, Pb — not noble gases."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

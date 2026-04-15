@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py04gett",
+  "name": "dict.get with default",
+  "question_type": "multichoice",
+  "question_text": "<p>Given <code>d = {\"a\": 1}</code>, what does <code>d.get(\"b\", 0)</code> return?</p>",
+  "general_feedback": "<p><code>dict.get(key, default)</code> returns <code>d[key]</code> if the key is present and <code>default</code> otherwise, without raising. Here <code>\"b\"</code> is missing, so <code>0</code> is returned.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "dict",
+    "api"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Key 'b' is missing, so the provided default is returned.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "0",
+      "fraction": 100,
+      "feedback": "Key 'b' is missing, so the provided default is returned."
+    },
+    {
+      "text": "None",
+      "fraction": 0,
+      "feedback": "get returns None only when no default is supplied; here the default is 0."
+    },
+    {
+      "text": "Raises a KeyError",
+      "fraction": 0,
+      "feedback": "dict.get never raises KeyError — it returns the default instead."
+    },
+    {
+      "text": "1",
+      "fraction": 0,
+      "feedback": "1 is d['a']; get was called with key 'b', not 'a'."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

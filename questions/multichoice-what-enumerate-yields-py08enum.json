@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py08enum",
+  "name": "What enumerate() yields",
+  "question_type": "multichoice",
+  "question_text": "<p>Given <code>for i, v in enumerate([\"a\", \"b\"]):</code>, what does each iteration bind?</p>",
+  "general_feedback": "<p><code>enumerate(iterable, start=0)</code> yields pairs (index, value). Here iteration yields (0, 'a') then (1, 'b'). The optional <code>start</code> argument changes the starting index.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "iteration",
+    "builtins"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — enumerate yields (index, value) pairs.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "i is the index, v is the element",
+      "fraction": 100,
+      "feedback": "enumerate yields (index, value) pairs."
+    },
+    {
+      "text": "i and v are both elements",
+      "fraction": 0,
+      "feedback": "enumerate produces an index alongside the element, not two elements."
+    },
+    {
+      "text": "i is the element, v is the index",
+      "fraction": 0,
+      "feedback": "Reversed — the unpacking order is (index, value)."
+    },
+    {
+      "text": "i is always 1 and v cycles",
+      "fraction": 0,
+      "feedback": "i counts up from the start index (default 0), incrementing each iteration."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

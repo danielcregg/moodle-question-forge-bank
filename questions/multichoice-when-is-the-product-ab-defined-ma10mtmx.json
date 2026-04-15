@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-ma10mtmx",
+  "name": "When is the product AB defined?",
+  "question_type": "multichoice",
+  "question_text": "<p>If A is an m × n matrix and B is a p × q matrix, the matrix product AB is defined when which condition holds?</p>",
+  "general_feedback": "<p>For AB to be defined, the number of columns of A (n) must equal the number of rows of B (p). The result AB then has shape m × q.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "math",
+  "tags": [
+    "linear-algebra",
+    "matrices"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Columns of A must match rows of B for the dot products to line up.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "n = p",
+      "fraction": 100,
+      "feedback": "Columns of A must match rows of B for the dot products to line up."
+    },
+    {
+      "text": "m = q",
+      "fraction": 0,
+      "feedback": "The outer dimensions (m and q) describe the shape of AB; they need not be equal."
+    },
+    {
+      "text": "m = n",
+      "fraction": 0,
+      "feedback": "A does not need to be square for AB to be defined."
+    },
+    {
+      "text": "p = q",
+      "fraction": 0,
+      "feedback": "B does not need to be square for AB to be defined."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

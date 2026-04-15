@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv08strt",
+  "name": "Can a static method access an instance field directly?",
+  "question_type": "multichoice",
+  "question_text": "<p>Inside a static method of class <code>Foo</code>, which statement about accessing a non-static (instance) field <code>count</code> is correct?</p>",
+  "general_feedback": "<p>Static methods do not have an implicit <code>this</code> — they are not associated with any particular instance. An instance field can be accessed from a static method only via a specific object reference (for example <code>someFoo.count</code>).</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "static",
+    "oop"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Static methods need an explicit receiver for instance-level state.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "You must qualify it with an instance reference, e.g. someFoo.count.",
+      "fraction": 100,
+      "feedback": "Static methods need an explicit receiver for instance-level state."
+    },
+    {
+      "text": "You can access it directly by its simple name, count.",
+      "fraction": 0,
+      "feedback": "No — there is no implicit this in a static context."
+    },
+    {
+      "text": "You can access it via this.count.",
+      "fraction": 0,
+      "feedback": "this is not available inside static methods."
+    },
+    {
+      "text": "You cannot access an instance field of the class from any static method, ever.",
+      "fraction": 0,
+      "feedback": "You can — as long as you have a reference to an instance (or create one)."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py06isop",
+  "name": "Python is vs == for small integers",
+  "question_type": "multichoice",
+  "question_text": "<p>Which comparison best reflects the correct use of <code>is</code> versus <code>==</code> in Python?</p>",
+  "general_feedback": "<p><code>==</code> tests value equality; <code>is</code> tests object identity (same object in memory). For checking values, always prefer <code>==</code>. <code>is</code> is appropriate for singletons such as <code>None</code> — hence the idiomatic <code>if x is None</code>.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "identity",
+    "equality"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Standard Python guidance.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Use == for value comparison; use is to check identity with singletons like None.",
+      "fraction": 100,
+      "feedback": "Standard Python guidance."
+    },
+    {
+      "text": "is and == are interchangeable.",
+      "fraction": 0,
+      "feedback": "They differ: is can be False even when == is True if the objects are distinct."
+    },
+    {
+      "text": "Always use is for better performance.",
+      "fraction": 0,
+      "feedback": "is does not compare values; relying on it for equality is a common bug (e.g. 'a' is 'a' is implementation-dependent)."
+    },
+    {
+      "text": "== checks identity; is checks value equality.",
+      "fraction": 0,
+      "feedback": "Reversed — is checks identity, == checks value equality."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

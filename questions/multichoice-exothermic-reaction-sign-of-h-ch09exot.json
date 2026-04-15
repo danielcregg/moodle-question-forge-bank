@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-ch09exot",
+  "name": "Exothermic reaction sign of ΔH",
+  "question_type": "multichoice",
+  "question_text": "<p>In an exothermic reaction, what is the sign of the enthalpy change (ΔH)?</p>",
+  "general_feedback": "<p>Exothermic reactions release heat to the surroundings, so the system's enthalpy decreases. By convention ΔH = H<sub>products</sub> − H<sub>reactants</sub> is negative.</p>",
+  "difficulty": "easy",
+  "bloom_level": "understand",
+  "topic": "chemistry",
+  "tags": [
+    "thermochemistry",
+    "enthalpy"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Heat is released, so the system loses enthalpy; ΔH < 0.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Negative",
+      "fraction": 100,
+      "feedback": "Heat is released, so the system loses enthalpy; ΔH < 0."
+    },
+    {
+      "text": "Positive",
+      "fraction": 0,
+      "feedback": "Positive ΔH means the system absorbs heat — that is endothermic, the opposite case."
+    },
+    {
+      "text": "Zero",
+      "fraction": 0,
+      "feedback": "Zero ΔH would mean no net heat exchange; exothermic reactions release heat."
+    },
+    {
+      "text": "Undefined",
+      "fraction": 0,
+      "feedback": "ΔH is well-defined for any reaction with specified states; exothermic means ΔH < 0."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

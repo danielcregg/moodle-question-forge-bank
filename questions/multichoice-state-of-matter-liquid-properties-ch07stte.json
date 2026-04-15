@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-ch07stte",
+  "name": "State of matter — liquid properties",
+  "question_type": "multichoice",
+  "question_text": "<p>Which state of matter has a definite volume but takes the shape of its container?</p>",
+  "general_feedback": "<p>Liquids have a fixed volume because intermolecular forces are strong enough to keep molecules close, but the molecules can flow past each other, so a liquid adopts the shape of its container.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "chemistry",
+  "tags": [
+    "states-of-matter",
+    "physical-chemistry"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Liquids have a fixed volume and flow to fill the container's shape.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Liquid",
+      "fraction": 100,
+      "feedback": "Liquids have a fixed volume and flow to fill the container's shape."
+    },
+    {
+      "text": "Gas",
+      "fraction": 0,
+      "feedback": "A gas has neither fixed volume nor fixed shape — it expands to fill its container."
+    },
+    {
+      "text": "Solid",
+      "fraction": 0,
+      "feedback": "A solid has both fixed volume and fixed shape."
+    },
+    {
+      "text": "Plasma",
+      "fraction": 0,
+      "feedback": "A plasma, like a gas, has no fixed volume or shape."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

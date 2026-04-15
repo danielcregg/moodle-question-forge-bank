@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py07fstr",
+  "name": "f-string expression evaluation",
+  "question_type": "multichoice",
+  "question_text": "<p>What does the following f-string evaluate to, given <code>x = 3</code>?</p><pre>f\"x squared is {x ** 2}\"</pre>",
+  "general_feedback": "<p>Inside an f-string, expressions between <code>{ }</code> are evaluated and substituted. <code>x ** 2</code> with x = 3 is 9, so the string becomes <code>'x squared is 9'</code>.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "strings",
+    "f-strings"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — The expression x ** 2 is evaluated and inserted.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "'x squared is 9'",
+      "fraction": 100,
+      "feedback": "The expression x ** 2 is evaluated and inserted."
+    },
+    {
+      "text": "'x squared is x ** 2'",
+      "fraction": 0,
+      "feedback": "f-strings evaluate the expression inside braces rather than printing it literally."
+    },
+    {
+      "text": "'x squared is {9}'",
+      "fraction": 0,
+      "feedback": "The braces are part of the f-string syntax and are not retained in the output."
+    },
+    {
+      "text": "A SyntaxError",
+      "fraction": 0,
+      "feedback": "f-strings support arbitrary Python expressions inside braces."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

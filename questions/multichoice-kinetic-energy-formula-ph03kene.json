@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ph03kene",
+  "name": "Kinetic energy formula",
+  "question_type": "multichoice",
+  "question_text": "<p>A 2 kg object moves at 3 m/s. What is its kinetic energy?</p>",
+  "general_feedback": "<p>Kinetic energy is <em>KE</em> = ½ m v². Substituting: ½ × 2 × 3² = 9 J.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "physics",
+  "tags": [
+    "mechanics",
+    "energy",
+    "kinetic-energy"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — ½ × 2 × 3² = 9 J.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "9 J",
+      "fraction": 100,
+      "feedback": "½ × 2 × 3² = 9 J."
+    },
+    {
+      "text": "6 J",
+      "fraction": 0,
+      "feedback": "You computed m·v, not ½·m·v²."
+    },
+    {
+      "text": "18 J",
+      "fraction": 0,
+      "feedback": "You forgot the factor of ½ in ½ m v²."
+    },
+    {
+      "text": "3 J",
+      "fraction": 0,
+      "feedback": "You computed ½·m·v, not ½·m·v²."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

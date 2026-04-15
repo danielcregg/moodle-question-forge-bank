@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv02equl",
+  "name": "== vs equals() on Java Strings",
+  "question_type": "multichoice",
+  "question_text": "<p>Consider:</p><pre>String a = new String(\"hi\");\nString b = new String(\"hi\");\nboolean r1 = (a == b);\nboolean r2 = a.equals(b);</pre><p>What are the values of <code>r1</code> and <code>r2</code>?</p>",
+  "general_feedback": "<p><code>==</code> compares object references, not contents. Because the two <code>new String</code> calls create distinct objects, <code>a == b</code> is <code>false</code>. <code>equals</code> on <code>String</code> compares the character sequences, which are equal, so it returns <code>true</code>.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "strings",
+    "equality"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — == compares references (different objects), equals compares content (same characters).",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "r1 = false, r2 = true",
+      "fraction": 100,
+      "feedback": "== compares references (different objects), equals compares content (same characters)."
+    },
+    {
+      "text": "r1 = true, r2 = true",
+      "fraction": 0,
+      "feedback": "== is true only when both sides reference the exact same object; new creates distinct objects."
+    },
+    {
+      "text": "r1 = false, r2 = false",
+      "fraction": 0,
+      "feedback": "The character contents match, so equals returns true."
+    },
+    {
+      "text": "r1 = true, r2 = false",
+      "fraction": 0,
+      "feedback": "Both outcomes are reversed; == is false and equals is true here."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

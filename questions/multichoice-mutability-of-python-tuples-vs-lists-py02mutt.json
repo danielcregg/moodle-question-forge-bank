@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py02mutt",
+  "name": "Mutability of Python tuples vs lists",
+  "question_type": "multichoice",
+  "question_text": "<p>Which of the following statements about Python built-in types is correct?</p>",
+  "general_feedback": "<p>Lists are mutable — their elements can be reassigned or appended in place. Tuples are immutable — once constructed, their elements cannot be rebound. (The objects referenced by a tuple can themselves be mutable, but the tuple slots are fixed.)</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "mutability",
+    "data-structures"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Standard Python semantics.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Lists are mutable; tuples are immutable.",
+      "fraction": 100,
+      "feedback": "Standard Python semantics."
+    },
+    {
+      "text": "Lists are immutable; tuples are mutable.",
+      "fraction": 0,
+      "feedback": "Reversed — list has append/extend/__setitem__; tuple does not."
+    },
+    {
+      "text": "Both lists and tuples are immutable.",
+      "fraction": 0,
+      "feedback": "Lists have in-place mutation via append, pop, and item assignment."
+    },
+    {
+      "text": "Both lists and tuples are mutable.",
+      "fraction": 0,
+      "feedback": "Tuple objects cannot be modified after construction."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

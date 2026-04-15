@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ph07gryt",
+  "name": "Gravitational acceleration on Earth's surface",
+  "question_type": "multichoice",
+  "question_text": "<p>What is the approximate magnitude of gravitational acceleration on Earth's surface at sea level?</p>",
+  "general_feedback": "<p>Near sea level the standard value is <em>g</em> ≈ 9.81 m/s² (often rounded to 9.8 or 10 m/s² for quick calculations).</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "physics",
+  "tags": [
+    "mechanics",
+    "gravity",
+    "constants"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Standard approximate value at Earth's surface.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "9.8 m/s²",
+      "fraction": 100,
+      "feedback": "Standard approximate value at Earth's surface."
+    },
+    {
+      "text": "1.6 m/s²",
+      "fraction": 0,
+      "feedback": "That is approximately the surface gravity of the Moon."
+    },
+    {
+      "text": "98 m/s²",
+      "fraction": 0,
+      "feedback": "You moved the decimal one place too far to the right."
+    },
+    {
+      "text": "3.7 m/s²",
+      "fraction": 0,
+      "feedback": "That is approximately the surface gravity of Mars."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

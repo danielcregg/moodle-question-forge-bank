@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv04list",
+  "name": "ArrayList vs LinkedList for random access",
+  "question_type": "multichoice",
+  "question_text": "<p>In the standard Java Collections Framework, what is the expected time complexity of <code>get(index)</code> for an <code>ArrayList</code> and for a <code>LinkedList</code> respectively?</p>",
+  "general_feedback": "<p><code>ArrayList</code> is backed by an array, so indexed access is O(1). <code>LinkedList</code> is a doubly-linked list, so <code>get(index)</code> must walk from the nearest end, giving O(n).</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "collections",
+    "complexity"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Array indexing vs linked traversal.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "ArrayList: O(1), LinkedList: O(n)",
+      "fraction": 100,
+      "feedback": "Array indexing vs linked traversal."
+    },
+    {
+      "text": "ArrayList: O(n), LinkedList: O(1)",
+      "fraction": 0,
+      "feedback": "Reversed — the array-backed list is the one with constant-time indexing."
+    },
+    {
+      "text": "Both O(1)",
+      "fraction": 0,
+      "feedback": "LinkedList indexed access cannot be O(1) without random access."
+    },
+    {
+      "text": "Both O(n)",
+      "fraction": 0,
+      "feedback": "ArrayList indexed access is O(1) because it uses an underlying array."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

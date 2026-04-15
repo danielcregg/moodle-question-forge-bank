@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv07intf",
+  "name": "Difference between interface and abstract class (Java 8+)",
+  "question_type": "multichoice",
+  "question_text": "<p>In Java 8 and later, which statement about interfaces versus abstract classes is correct?</p>",
+  "general_feedback": "<p>A class can implement many interfaces but extend only one class (abstract or concrete). Abstract classes can hold mutable instance state and non-public constructors; interfaces cannot hold mutable instance fields (only public static final constants) and have no constructors. Both can now define concrete methods (via <code>default</code>/<code>static</code> methods on interfaces, regular methods on abstract classes).</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "oop",
+    "interfaces"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Java supports multiple interface inheritance but only single class inheritance.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "A class may implement multiple interfaces but may extend only one (abstract) class.",
+      "fraction": 100,
+      "feedback": "Java supports multiple interface inheritance but only single class inheritance."
+    },
+    {
+      "text": "An interface can hold mutable instance fields just like an abstract class.",
+      "fraction": 0,
+      "feedback": "Interface fields are implicitly public static final — not mutable per-instance."
+    },
+    {
+      "text": "Abstract classes cannot contain constructors.",
+      "fraction": 0,
+      "feedback": "Abstract classes can define constructors, invoked by subclasses via super(...)."
+    },
+    {
+      "text": "Interfaces cannot have any method bodies at all.",
+      "fraction": 0,
+      "feedback": "Since Java 8, interfaces allow default and static methods with bodies."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

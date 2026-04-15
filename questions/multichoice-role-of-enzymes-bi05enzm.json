@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-bi05enzm",
+  "name": "Role of enzymes",
+  "question_type": "multichoice",
+  "question_text": "<p>Which statement best describes the role of an enzyme in a biochemical reaction?</p>",
+  "general_feedback": "<p>Enzymes are biological catalysts that lower a reaction's activation energy, allowing it to proceed faster at cellular temperatures. They are not consumed and do not shift the equilibrium position.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "biology",
+  "tags": [
+    "enzymes",
+    "biochemistry",
+    "catalysis"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Enzymes are catalysts — they accelerate reactions by reducing the activation energy barrier.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Lowers the activation energy without being consumed.",
+      "fraction": 100,
+      "feedback": "Enzymes are catalysts — they accelerate reactions by reducing the activation energy barrier."
+    },
+    {
+      "text": "Supplies the energy needed for the reaction to proceed.",
+      "fraction": 0,
+      "feedback": "Energy for unfavourable reactions usually comes from ATP or other coupled sources, not the enzyme itself."
+    },
+    {
+      "text": "Shifts the equilibrium toward products.",
+      "fraction": 0,
+      "feedback": "Catalysts speed both forward and reverse reactions equally; they do not move the equilibrium position."
+    },
+    {
+      "text": "Is permanently consumed to drive the reaction forward.",
+      "fraction": 0,
+      "feedback": "An enzyme is recycled after catalysis and is not consumed by the reaction it catalyses."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

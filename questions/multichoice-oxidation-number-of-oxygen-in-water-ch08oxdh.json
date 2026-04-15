@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-ch08oxdh",
+  "name": "Oxidation number of oxygen in water",
+  "question_type": "multichoice",
+  "question_text": "<p>What is the oxidation number of oxygen in H₂O?</p>",
+  "general_feedback": "<p>In almost all common compounds, oxygen has an oxidation number of −2. Hydrogen contributes +1 each, so 2 × (+1) + (−2) = 0, matching H₂O's overall neutral charge.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "chemistry",
+  "tags": [
+    "redox",
+    "oxidation-number"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Standard oxidation number for oxygen in water and most oxides.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "−2",
+      "fraction": 100,
+      "feedback": "Standard oxidation number for oxygen in water and most oxides."
+    },
+    {
+      "text": "+2",
+      "fraction": 0,
+      "feedback": "Positive oxidation numbers for oxygen are rare (e.g. OF₂); in water it is negative."
+    },
+    {
+      "text": "0",
+      "fraction": 0,
+      "feedback": "Elemental oxygen (O₂) is 0, but the O atom in a compound such as water is not elemental."
+    },
+    {
+      "text": "−1",
+      "fraction": 0,
+      "feedback": "−1 applies to peroxides (like H₂O₂); regular water is −2."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

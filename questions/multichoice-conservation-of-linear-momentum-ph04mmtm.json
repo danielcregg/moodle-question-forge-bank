@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ph04mmtm",
+  "name": "Conservation of linear momentum",
+  "question_type": "multichoice",
+  "question_text": "<p>A 2 kg cart moving at 4 m/s collides and sticks to a stationary 2 kg cart on a frictionless track. What is the common velocity of the two carts after the collision?</p>",
+  "general_feedback": "<p>Momentum is conserved: p<sub>i</sub> = (2 kg)(4 m/s) + 0 = 8 kg·m/s. After the inelastic collision the combined mass is 4 kg, so v = 8 / 4 = 2 m/s.</p>",
+  "difficulty": "medium",
+  "bloom_level": "apply",
+  "topic": "physics",
+  "tags": [
+    "mechanics",
+    "momentum",
+    "collisions"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Total momentum / total mass = 8 / 4 = 2 m/s.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "2 m/s",
+      "fraction": 100,
+      "feedback": "Total momentum / total mass = 8 / 4 = 2 m/s."
+    },
+    {
+      "text": "4 m/s",
+      "fraction": 0,
+      "feedback": "That would violate conservation of momentum — momentum is shared over the new combined mass."
+    },
+    {
+      "text": "8 m/s",
+      "fraction": 0,
+      "feedback": "That is the total momentum in kg·m/s, not a velocity."
+    },
+    {
+      "text": "1 m/s",
+      "fraction": 0,
+      "feedback": "You divided by 8 instead of by the combined mass of 4 kg."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

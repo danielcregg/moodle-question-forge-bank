@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ma05slpe",
+  "name": "Slope of a line through two points",
+  "question_type": "multichoice",
+  "question_text": "<p>What is the slope of the line through the points (1, 2) and (4, 8)?</p>",
+  "general_feedback": "<p>Slope m = (y₂ − y₁) / (x₂ − x₁) = (8 − 2) / (4 − 1) = 6 / 3 = 2.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "math",
+  "tags": [
+    "algebra",
+    "lines",
+    "slope"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — (8 − 2) / (4 − 1) = 6 / 3 = 2.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "2",
+      "fraction": 100,
+      "feedback": "(8 − 2) / (4 − 1) = 6 / 3 = 2."
+    },
+    {
+      "text": "1/2",
+      "fraction": 0,
+      "feedback": "You inverted the ratio — that is Δx / Δy, not rise / run."
+    },
+    {
+      "text": "6",
+      "fraction": 0,
+      "feedback": "You reported the rise only; slope divides rise by run."
+    },
+    {
+      "text": "3",
+      "fraction": 0,
+      "feedback": "You reported the run only; slope divides rise by run."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

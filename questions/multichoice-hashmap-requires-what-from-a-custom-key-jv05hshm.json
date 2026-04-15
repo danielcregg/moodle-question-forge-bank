@@ -1,0 +1,49 @@
+{
+  "idnumber": "mqf-jv05hshm",
+  "name": "HashMap requires what from a custom key?",
+  "question_type": "multichoice",
+  "question_text": "<p>If you use an instance of a custom class as a key in a <code>HashMap</code>, which methods must be implemented correctly on that class for the map to behave reliably?</p>",
+  "general_feedback": "<p>HashMap buckets entries by <code>hashCode()</code> and then resolves bucket collisions with <code>equals()</code>. Keys that are equal according to <code>equals</code> must return the same <code>hashCode</code>; otherwise lookups can silently fail.</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "collections",
+    "hashmap",
+    "equals-hashcode"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — HashMap needs a consistent hash-to-bucket mapping and correct equality inside each bucket.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Both equals and hashCode",
+      "fraction": 100,
+      "feedback": "HashMap needs a consistent hash-to-bucket mapping and correct equality inside each bucket."
+    },
+    {
+      "text": "Only equals",
+      "fraction": 0,
+      "feedback": "Without hashCode, two 'equal' keys can land in different buckets and never match."
+    },
+    {
+      "text": "Only hashCode",
+      "fraction": 0,
+      "feedback": "Without equals, HashMap cannot tell two hash-equal keys apart inside a bucket."
+    },
+    {
+      "text": "Only Comparable.compareTo",
+      "fraction": 0,
+      "feedback": "compareTo is relevant for TreeMap/sorted sets, not for HashMap."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

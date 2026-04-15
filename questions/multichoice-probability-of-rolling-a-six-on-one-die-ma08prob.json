@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-ma08prob",
+  "name": "Probability of rolling a six on one die",
+  "question_type": "multichoice",
+  "question_text": "<p>A fair six-sided die is rolled once. What is the probability of rolling a six?</p>",
+  "general_feedback": "<p>There are six equally likely outcomes {1, 2, 3, 4, 5, 6}, and rolling a six is one of them, so the probability is 1/6.</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "math",
+  "tags": [
+    "probability",
+    "combinatorics"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — One favourable outcome out of six equally likely outcomes.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "1/6",
+      "fraction": 100,
+      "feedback": "One favourable outcome out of six equally likely outcomes."
+    },
+    {
+      "text": "1/3",
+      "fraction": 0,
+      "feedback": "That is the probability of rolling an even number, not of rolling a specific face."
+    },
+    {
+      "text": "1/2",
+      "fraction": 0,
+      "feedback": "That is the probability of rolling an even (or odd) number, not of a specific face."
+    },
+    {
+      "text": "1/36",
+      "fraction": 0,
+      "feedback": "1/36 is the probability of a specific pair when rolling two dice, not one."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

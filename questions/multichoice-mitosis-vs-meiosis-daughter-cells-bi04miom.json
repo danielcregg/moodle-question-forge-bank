@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-bi04miom",
+  "name": "Mitosis vs meiosis — daughter cells",
+  "question_type": "multichoice",
+  "question_text": "<p>Starting from a single diploid somatic cell, mitosis produces how many daughter cells, and what is their ploidy?</p>",
+  "general_feedback": "<p>Mitosis divides one diploid (2n) cell into two genetically identical diploid daughter cells. Meiosis, in contrast, produces four haploid (n) gametes from one diploid precursor.</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "biology",
+  "tags": [
+    "cell-division",
+    "genetics",
+    "chromosomes"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Mitosis yields two 2n cells, genetically identical to the parent.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "2 diploid cells",
+      "fraction": 100,
+      "feedback": "Mitosis yields two 2n cells, genetically identical to the parent."
+    },
+    {
+      "text": "4 haploid cells",
+      "fraction": 0,
+      "feedback": "That is the outcome of meiosis, not mitosis."
+    },
+    {
+      "text": "4 diploid cells",
+      "fraction": 0,
+      "feedback": "Mitosis produces two daughter cells, not four."
+    },
+    {
+      "text": "2 haploid cells",
+      "fraction": 0,
+      "feedback": "Mitosis does not halve chromosome number; the daughter cells remain diploid."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

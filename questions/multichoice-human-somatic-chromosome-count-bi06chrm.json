@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-bi06chrm",
+  "name": "Human somatic chromosome count",
+  "question_type": "multichoice",
+  "question_text": "<p>How many chromosomes are typically found in a human somatic (non-reproductive) cell?</p>",
+  "general_feedback": "<p>Humans are diploid with 23 pairs of chromosomes — 22 autosome pairs plus one pair of sex chromosomes — for a total of 46 chromosomes per somatic cell. Gametes have 23 (haploid).</p>",
+  "difficulty": "easy",
+  "bloom_level": "remember",
+  "topic": "biology",
+  "tags": [
+    "genetics",
+    "chromosomes",
+    "human-biology"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — 23 pairs × 2 = 46 chromosomes in a diploid human somatic cell.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "46",
+      "fraction": 100,
+      "feedback": "23 pairs × 2 = 46 chromosomes in a diploid human somatic cell."
+    },
+    {
+      "text": "23",
+      "fraction": 0,
+      "feedback": "That is the haploid number found in gametes, not in somatic cells."
+    },
+    {
+      "text": "92",
+      "fraction": 0,
+      "feedback": "That would be twice the diploid number — e.g. a cell that has replicated DNA but not divided."
+    },
+    {
+      "text": "48",
+      "fraction": 0,
+      "feedback": "48 is the diploid chromosome count of chimpanzees and gorillas, not humans."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

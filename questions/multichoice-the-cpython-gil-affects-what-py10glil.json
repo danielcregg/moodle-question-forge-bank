@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py10glil",
+  "name": "The CPython GIL affects what?",
+  "question_type": "multichoice",
+  "question_text": "<p>In CPython, what does the Global Interpreter Lock (GIL) primarily prevent?</p>",
+  "general_feedback": "<p>The GIL ensures that only one native thread executes Python bytecode at a time, which serialises CPU-bound pure-Python work across threads. I/O-bound threads still benefit from threading because the GIL is released during most I/O waits.</p>",
+  "difficulty": "hard",
+  "bloom_level": "understand",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "concurrency",
+    "gil"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — The GIL serialises bytecode execution across threads in CPython.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Multiple threads from executing Python bytecode simultaneously.",
+      "fraction": 100,
+      "feedback": "The GIL serialises bytecode execution across threads in CPython."
+    },
+    {
+      "text": "The interpreter from ever being used in multi-core machines.",
+      "fraction": 0,
+      "feedback": "The interpreter runs on multi-core hardware; the GIL affects parallelism within a process, not whether CPython can run."
+    },
+    {
+      "text": "I/O-bound programs from benefiting from threading.",
+      "fraction": 0,
+      "feedback": "I/O releases the GIL, so threading is effective for I/O-bound workloads."
+    },
+    {
+      "text": "Multiprocessing from running Python code in parallel.",
+      "fraction": 0,
+      "feedback": "multiprocessing spawns separate processes with their own GIL, so they run Python bytecode in parallel."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv09lmbd",
+  "name": "Functional interface for an int-to-int lambda",
+  "question_type": "multichoice",
+  "question_text": "<p>Which functional interface from <code>java.util.function</code> most directly matches a lambda that takes a single <code>int</code> and returns an <code>int</code>, avoiding boxing?</p>",
+  "general_feedback": "<p><code>IntUnaryOperator</code> is specialised for <code>int → int</code> without boxing. <code>Function&lt;Integer, Integer&gt;</code> works but forces boxing on both sides; <code>UnaryOperator&lt;Integer&gt;</code> likewise.</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "lambdas",
+    "functional-interfaces"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Primitive specialisation: int input, int output, no boxing.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "IntUnaryOperator",
+      "fraction": 100,
+      "feedback": "Primitive specialisation: int input, int output, no boxing."
+    },
+    {
+      "text": "Function<Integer, Integer>",
+      "fraction": 0,
+      "feedback": "It works but boxes both arguments and results; IntUnaryOperator is the primitive specialisation."
+    },
+    {
+      "text": "Supplier<Integer>",
+      "fraction": 0,
+      "feedback": "Supplier takes no input, so it cannot model a function of one argument."
+    },
+    {
+      "text": "Consumer<Integer>",
+      "fraction": 0,
+      "feedback": "Consumer returns void; it cannot produce a result."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

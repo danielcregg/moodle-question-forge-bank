@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py05slic",
+  "name": "Python slicing step",
+  "question_type": "multichoice",
+  "question_text": "<p>What does <code>\"abcdef\"[::2]</code> evaluate to?</p>",
+  "general_feedback": "<p>The slice syntax is <code>start:stop:step</code>. Empty start and stop mean 'whole string'; step = 2 keeps every second character starting from index 0: a, c, e.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "slicing",
+    "strings"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Step of 2 from index 0 picks a, c, e.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "'ace'",
+      "fraction": 100,
+      "feedback": "Step of 2 from index 0 picks a, c, e."
+    },
+    {
+      "text": "'bdf'",
+      "fraction": 0,
+      "feedback": "That would be step 2 starting from index 1, i.e. 'abcdef'[1::2]."
+    },
+    {
+      "text": "'abcdef'",
+      "fraction": 0,
+      "feedback": "That ignores the step — it would be 'abcdef'[::] or 'abcdef'[::1]."
+    },
+    {
+      "text": "'fedcba'",
+      "fraction": 0,
+      "feedback": "Reversal uses step −1, not 2."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

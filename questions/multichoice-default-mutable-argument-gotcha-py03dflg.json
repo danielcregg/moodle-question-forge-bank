@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py03dflg",
+  "name": "Default mutable argument gotcha",
+  "question_type": "multichoice",
+  "question_text": "<p>Consider:</p><pre>def add(x, acc=[]):\n    acc.append(x)\n    return acc\n\nprint(add(1))\nprint(add(2))</pre><p>What is printed?</p>",
+  "general_feedback": "<p>Default argument values are evaluated once, at function definition. The same list object is reused across calls, so each call appends to it. Fix by using <code>acc=None</code> and assigning <code>acc = []</code> inside when None.</p>",
+  "difficulty": "hard",
+  "bloom_level": "understand",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "functions",
+    "default-arguments"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — The default list is shared across calls, so its contents accumulate.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "[1] then [1, 2]",
+      "fraction": 100,
+      "feedback": "The default list is shared across calls, so its contents accumulate."
+    },
+    {
+      "text": "[1] then [2]",
+      "fraction": 0,
+      "feedback": "That would require a fresh list per call, which does not happen with a mutable default."
+    },
+    {
+      "text": "[1, 2] then [1, 2]",
+      "fraction": 0,
+      "feedback": "The first call sees only x=1; 2 is appended only on the second call."
+    },
+    {
+      "text": "[2] then [1, 2]",
+      "fraction": 0,
+      "feedback": "The first call appends 1 first; calls run in order."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-ma06intx",
+  "name": "Indefinite integral of x²",
+  "question_type": "multichoice",
+  "question_text": "<p>What is ∫ x² dx?</p>",
+  "general_feedback": "<p>By the power rule, ∫ xⁿ dx = xⁿ⁺¹ / (n + 1) + C for n ≠ −1. With n = 2 this is x³ / 3 + C.</p>",
+  "difficulty": "easy",
+  "bloom_level": "apply",
+  "topic": "math",
+  "tags": [
+    "calculus",
+    "integration",
+    "power-rule"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — Power rule for integration with n = 2.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "x³/3 + C",
+      "fraction": 100,
+      "feedback": "Power rule for integration with n = 2."
+    },
+    {
+      "text": "2x + C",
+      "fraction": 0,
+      "feedback": "That is the derivative of x², not its integral."
+    },
+    {
+      "text": "x³ + C",
+      "fraction": 0,
+      "feedback": "You forgot to divide by (n + 1) = 3."
+    },
+    {
+      "text": "x²/2 + C",
+      "fraction": 0,
+      "feedback": "That is the antiderivative of x, not of x²."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-jv06excp",
+  "name": "Checked vs unchecked exceptions",
+  "question_type": "multichoice",
+  "question_text": "<p>Which Java class is the root of <strong>unchecked</strong> exceptions that the compiler does not force you to declare or catch?</p>",
+  "general_feedback": "<p><code>java.lang.RuntimeException</code> and its subclasses (and <code>Error</code>) are unchecked. Subclasses of <code>Exception</code> other than <code>RuntimeException</code> are checked and must be declared or handled.</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "coding/java",
+  "tags": [
+    "java",
+    "exceptions",
+    "error-handling"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — RuntimeException and its subclasses are unchecked.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "RuntimeException",
+      "fraction": 100,
+      "feedback": "RuntimeException and its subclasses are unchecked."
+    },
+    {
+      "text": "Exception",
+      "fraction": 0,
+      "feedback": "Most Exception subclasses are checked; RuntimeException is the unchecked branch."
+    },
+    {
+      "text": "IOException",
+      "fraction": 0,
+      "feedback": "IOException is a checked exception — the compiler forces you to declare or catch it."
+    },
+    {
+      "text": "Throwable",
+      "fraction": 0,
+      "feedback": "Throwable is the common ancestor of all exceptions and errors, not the 'unchecked' root specifically."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

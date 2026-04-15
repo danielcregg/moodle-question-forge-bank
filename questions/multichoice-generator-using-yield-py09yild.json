@@ -1,0 +1,48 @@
+{
+  "idnumber": "mqf-py09yild",
+  "name": "Generator using yield",
+  "question_type": "multichoice",
+  "question_text": "<p>What does a function that contains a <code>yield</code> statement become in Python?</p>",
+  "general_feedback": "<p>Any function containing <code>yield</code> is compiled into a generator function. Calling it does not run the body — it returns a generator object that produces values lazily as it is iterated (via <code>next</code> or a for-loop).</p>",
+  "difficulty": "medium",
+  "bloom_level": "understand",
+  "topic": "coding/python",
+  "tags": [
+    "python",
+    "generators",
+    "yield"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — yield turns the function into a lazy iterator factory.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "A generator function whose call returns a generator object.",
+      "fraction": 100,
+      "feedback": "yield turns the function into a lazy iterator factory."
+    },
+    {
+      "text": "A coroutine that is scheduled on the event loop.",
+      "fraction": 0,
+      "feedback": "Coroutines are declared with async def; yield alone does not create one."
+    },
+    {
+      "text": "A regular function that returns the first yielded value.",
+      "fraction": 0,
+      "feedback": "Calling a generator function does not execute the body; it returns a generator."
+    },
+    {
+      "text": "A syntax error, because yield is only valid in async code.",
+      "fraction": 0,
+      "feedback": "yield is valid in ordinary functions and creates a generator."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}

@@ -1,0 +1,47 @@
+{
+  "idnumber": "mqf-bi10kngd",
+  "name": "Domains of life in modern classification",
+  "question_type": "multichoice",
+  "question_text": "<p>Which three domains are recognised in the modern three-domain system of biological classification?</p>",
+  "general_feedback": "<p>Carl Woese's three-domain system groups cellular life into Bacteria, Archaea, and Eukarya, reflecting deep rRNA-based differences. Viruses are not included because they are not cellular.</p>",
+  "difficulty": "medium",
+  "bloom_level": "remember",
+  "topic": "biology",
+  "tags": [
+    "taxonomy",
+    "classification"
+  ],
+  "default_grade": 1,
+  "penalty": 0,
+  "single": true,
+  "shuffle_answers": true,
+  "answer_numbering": "abc",
+  "correct_feedback": "Correct — The three-domain system introduced by Woese, based on ribosomal RNA phylogeny.",
+  "partially_correct_feedback": "Your answer is partially correct.",
+  "incorrect_feedback": "Incorrect — review the explanation below.",
+  "answers": [
+    {
+      "text": "Bacteria, Archaea, Eukarya",
+      "fraction": 100,
+      "feedback": "The three-domain system introduced by Woese, based on ribosomal RNA phylogeny."
+    },
+    {
+      "text": "Plantae, Animalia, Fungi",
+      "fraction": 0,
+      "feedback": "Those are kingdoms within Eukarya, not domains."
+    },
+    {
+      "text": "Prokaryota, Eukaryota, Virales",
+      "fraction": 0,
+      "feedback": "Viruses are not classified as a domain of cellular life in the three-domain system."
+    },
+    {
+      "text": "Monera, Protista, Metazoa",
+      "fraction": 0,
+      "feedback": "These are older or kingdom-level names and do not form the modern three-domain system."
+    }
+  ],
+  "submitter": "@danielcregg",
+  "submitted_at": "2026-04-15T00:00:00.000Z",
+  "validation_score": 10
+}
